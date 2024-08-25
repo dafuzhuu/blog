@@ -2,7 +2,7 @@
 title: "Search" # in any language you want
 layout: "search" # necessary for search
 # url: "/archive"
-# description: "Description for Search"
+# description: "Full text fuzzy search"
 summary: "search"
-placeholder: "placeholder text in search input box"
+placeholder: "我在找..."
 ---
