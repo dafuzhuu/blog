@@ -10,19 +10,21 @@ draft = false
 
 # 生词
 
-1. onwards 从...起
-2. excavate 挖掘
-3. coinage 创造新词的动作
-4. portmanteau term 合成词，portmanteau 综合的
-5. hoof/hooves
-6. rear
-7. padded
-8. pugnosed
-9. elaborate
-10. succulent
-11. grind
-12. abrasive
-13. fusion
+| Word             | Meaning                 |
+|------------------|-------------------------|
+| onwards          | adv. 从...起             |
+| excavate         | v. 挖掘                 |
+| coinage          | n. 创造新词的动作       |
+| portmanteau term | n. 合成词，portmanteau 综合的 |
+| hoof/hooves      | n. 蹄/蹄子（复数）       |
+| rear             | v. 抚养，养育           |
+| padded           | adj. 带衬垫的           |
+| pugnosed         | adj. 鼻子扁平的         |
+| elaborate        | **adj. 复杂的** , v. 详述        |
+| succulent        | adj. 多汁的             |
+| grind            | v. 磨碎                 |
+| abrasive         | adj./n. 研磨的          |
+| fusion           | n. 融合                 |
 
 
 # 长难句理解
