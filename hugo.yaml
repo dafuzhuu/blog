@@ -73,10 +73,10 @@ params:
   socialIcons:
     - name: github
       title: View Source on Github
-      url: "https://github.com/dafuzhuu/docs"
+      url: "https://github.com/dafuzhuu/blog"
 
   editPost:
-    URL: "https://github.com/dafuzhuu/docs/tree/main/content"
+    URL: "https://github.com/dafuzhuu/blog/tree/main/content"
     Text: "Edit" # edit text
     appendFilePath: true # to append file path to Edit link
 
