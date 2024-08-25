@@ -14,6 +14,15 @@ draft = false
 2. excavate 挖掘
 3. coinage 创造新词的动作
 4. portmanteau term 合成词，portmanteau 综合的
+5. hoof/hooves
+6. rear
+7. padded
+8. pugnosed
+9. elaborate
+10. succulent
+11. grind
+12. abrasive
+13. fusion
 
 
 # 长难句理解

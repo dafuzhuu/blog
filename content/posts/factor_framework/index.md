@@ -6,8 +6,6 @@ draft = false
 math = true
 +++
 
-测试
-
 ```python
 from jqfactor import get_factor_values, neutralize, winsorize_med, standardlize
 from jqfactor import Factor, calc_factors
@@ -233,7 +231,7 @@ $$
 R_t^i=\frac{P_{t+1+i}}{P_t}
 $$
 
-所以如果时间序列为 \\(t_1,t_2,t_3,t_4,t_5\\)，则lag=0时收益率数据只有四个\\(R_1,R_2,R_3,R_4\\)，lag=1时只有三个\\(R_1^1,R_2^1,R_3^1\\)，以此类推。
+所以如果时间序列为 $t_1,t_2,t_3,t_4,t_5$，则lag=0时收益率数据只有四个$R_1,R_2,R_3,R_4$，lag=1时只有三个$R_1^1,R_2^1,R_3^1$，以此类推。
 
 ```python
 (len(date_list) - 1) - i - 1 < lag_i
@@ -328,9 +326,9 @@ fac_ret_dict[date].head()
 
 ## IC测试
 
-IC衡量预测变量的预测能力，其定义通常为\\(t+1\\)时刻的预测收益率与真实收益率在截面上的相关系数。
+IC衡量预测变量的预测能力，其定义通常为$t+1$时刻的预测收益率与真实收益率在截面上的相关系数。
 
-实操中，\\(t+1\\)时刻的预测收益率常用\\(t\\)时刻的预测变量代替（也就是因子值）
+实操中，$t+1$时刻的预测收益率常用$t$时刻的预测变量代替（也就是因子值）
 
 ```python
 # 2.1 因子IC测试

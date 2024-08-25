@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>15分钟用Hugo&#43;Github Pages搭建博客 | Blog</title>
+<meta name="keywords" content="Hugo, GitHub Pages">
+<meta name="description" content="假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南
+本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）
+hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md
+随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod
+vim hugo.yaml 按&quot;I&quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加
+theme: PaperMod 按Esc再输入:wq保存并退出编辑
+至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面
+将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多
+首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库&#43;不添加README）
+步骤1: 在终端运行仓库主页代码
+echo &#34;# theplaybook-demo&#34; &gt;&gt; README.md git add README.md git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github.">
+<meta name="author" content="Dafu">
+<link rel="canonical" href="http://localhost:1313/blog/posts/demo/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/demo/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="15分钟用Hugo&#43;Github Pages搭建博客" />
+<meta property="og:description" content="假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南
+本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）
+hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md
+随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod
+vim hugo.yaml 按&quot;I&quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加
+theme: PaperMod 按Esc再输入:wq保存并退出编辑
+至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面
+将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多
+首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库&#43;不添加README）
+步骤1: 在终端运行仓库主页代码
+echo &#34;# theplaybook-demo&#34; &gt;&gt; README.md git add README.md git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/posts/demo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-08-24T21:15:11+08:00" />
+<meta property="article:modified_time" content="2024-08-24T21:15:11+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="15分钟用Hugo&#43;Github Pages搭建博客"/>
+<meta name="twitter:description" content="假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南
+本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）
+hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md
+随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod
+vim hugo.yaml 按&quot;I&quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加
+theme: PaperMod 按Esc再输入:wq保存并退出编辑
+至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面
+将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多
+首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库&#43;不添加README）
+步骤1: 在终端运行仓库主页代码
+echo &#34;# theplaybook-demo&#34; &gt;&gt; README.md git add README.md git commit -m &#34;first commit&#34; git branch -M main git remote add origin https://github."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "15分钟用Hugo+Github Pages搭建博客",
+      "item": "http://localhost:1313/blog/posts/demo/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "15分钟用Hugo+Github Pages搭建博客",
+  "name": "15分钟用Hugo\u002bGithub Pages搭建博客",
+  "description": "假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南\n本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）\nhugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md\n随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod\nvim hugo.yaml 按\u0026quot;I\u0026quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加\ntheme: PaperMod 按Esc再输入:wq保存并退出编辑\n至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面\n将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多\n首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）\n步骤1: 在终端运行仓库主页代码\necho \u0026#34;# theplaybook-demo\u0026#34; \u0026gt;\u0026gt; README.md git add README.md git commit -m \u0026#34;first commit\u0026#34; git branch -M main git remote add origin https://github.",
+  "keywords": [
+    "Hugo", "GitHub Pages"
+  ],
+  "articleBody": "假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南\n本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）\nhugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md\n随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod\nvim hugo.yaml 按\"I\"(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加\ntheme: PaperMod 按Esc再输入:wq保存并退出编辑\n至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面\n将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多\n首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）\n步骤1: 在终端运行仓库主页代码\necho \"# theplaybook-demo\" \u003e\u003e README.md git add README.md git commit -m \"first commit\" git branch -M main git remote add origin https://github.com/dafuzhuu/theplaybook-demo.git git push -u origin main 步骤2: 手动添加gh-pages分支\n步骤3: 接着在Settings下的Actions/General里，滑到最下面，打开Read and Write Permissions\n步骤4: 在Pages下的Build and deployment，将Source更换为GitHub Actions\n步骤5: 添加workflow\n导航到博客文件夹根目录\nmkdir -p .github/workflows touch .github/workflows/hugo.yaml vim .github/workflows/hugo.yaml 接着将下面代码复制到.github/workflows/hugo.yaml\n# Sample workflow for building and deploying a Hugo site to GitHub Pages name: Deploy Hugo site to Pages on: # Runs on pushes targeting the default branch push: branches: - main # Allows you to run this workflow manually from the Actions tab workflow_dispatch: # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages permissions: contents: read pages: write id-token: write # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete. concurrency: group: \"pages\" cancel-in-progress: false # Default to bash defaults: run: shell: bash jobs: # Build job build: runs-on: ubuntu-latest env: HUGO_VERSION: 0.128.0 steps: - name: Install Hugo CLI run: | wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \\ \u0026\u0026 sudo dpkg -i ${{ runner.temp }}/hugo.deb - name: Install Dart Sass run: sudo snap install dart-sass - name: Checkout uses: actions/checkout@v4 with: submodules: recursive fetch-depth: 0 - name: Setup Pages id: pages uses: actions/configure-pages@v5 - name: Install Node.js dependencies run: \"[[ -f package-lock.json || -f npm-shrinkwrap.json ]] \u0026\u0026 npm ci || true\" - name: Build with Hugo env: HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache HUGO_ENVIRONMENT: production TZ: America/Los_Angeles run: | hugo \\ --gc \\ --minify \\ --baseURL \"${{ steps.pages.outputs.base_url }}/\" - name: Upload artifact uses: actions/upload-pages-artifact@v3 with: path: ./public # Deployment job deploy: environment: name: github-pages url: ${{ steps.deployment.outputs.page_url }} runs-on: ubuntu-latest needs: build steps: - name: Deploy to GitHub Pages id: deployment uses: actions/deploy-pages@v4 步骤6: 上传到GitHub\ngit add . git commit -m \"Add workflow\" git push ",
+  "wordCount" : "363",
+  "inLanguage": "en",
+  "datePublished": "2024-08-24T21:15:11+08:00",
+  "dateModified": "2024-08-24T21:15:11+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Dafu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/posts/demo/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/blog/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/blog/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      15分钟用Hugo&#43;Github Pages搭建博客
+    </h1>
+    <div class="post-meta"><span title='2024-08-24 21:15:11 +0800 CST'>August 24, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Dafu&nbsp;|&nbsp;<a href="https://github.com/dafuzhuu/docs/tree/main/content/posts/demo/index.md" rel="noopener noreferrer" target="_blank">Edit</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e6%9c%ac%e5%9c%b0%e6%90%ad%e5%bb%bahugo%e5%8d%9a%e5%ae%a2" aria-label="本地搭建Hugo博客">本地搭建Hugo博客</a></li>
+                <li>
+                    <a href="#%e5%b0%86hugo%e9%83%a8%e7%bd%b2%e5%88%b0github-pages" aria-label="将Hugo部署到Github Pages">将Hugo部署到Github Pages</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p>假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南</p>
+<h2 id="本地搭建hugo博客">本地搭建Hugo博客<a hidden class="anchor" aria-hidden="true" href="#本地搭建hugo博客">#</a></h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new site theplaybook --format yaml
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> theplaybook
+</span></span></code></pre></div><p>用<code>hugo new site [博客文件夹名称]</code>指令在当前目录下新建一个Hugo模版。<code>--format [配置文件格式]</code>可选的格式有yaml, toml（默认toml）</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo new docs/test.md
+</span></span><span class="line"><span class="cl">git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth<span class="o">=</span><span class="m">1</span>
+</span></span><span class="line"><span class="cl">git init
+</span></span><span class="line"><span class="cl">git submodule add --depth<span class="o">=</span><span class="m">1</span> https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod
+</span></span></code></pre></div><p><code>hugo new docs/test.md</code>会在/content/docs下新建一个md文件test.md</p>
+<p>随后用git导入主题PaperMod，这两句足够完成配置，更多信息见<a href="https://github.com/adityatelange/hugo-PaperMod">Hugo PaperMod</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">vim hugo.yaml
+</span></span></code></pre></div><p>按&quot;I&quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">theme</span><span class="p">:</span><span class="w"> </span><span class="l">PaperMod</span><span class="w">
+</span></span></span></code></pre></div><p>按<code>Esc</code>再输入<code>:wq</code>保存并退出编辑</p>
+<p>至此Hugo博客在本地的搭建已经完成，运行<code>hugo server</code>指令并在网址栏输入<code>localhost:1313</code>就可以在本地看到博客的界面</p>
+<h2 id="将hugo部署到github-pages">将Hugo部署到Github Pages<a hidden class="anchor" aria-hidden="true" href="#将hugo部署到github-pages">#</a></h2>
+<p>GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多</p>
+<p>首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）</p>
+<p>步骤1: 在终端运行仓库主页代码</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;# theplaybook-demo&#34;</span> &gt;&gt; README.md
+</span></span><span class="line"><span class="cl">git add README.md
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;first commit&#34;</span>
+</span></span><span class="line"><span class="cl">git branch -M main
+</span></span><span class="line"><span class="cl">git remote add origin https://github.com/dafuzhuu/theplaybook-demo.git
+</span></span><span class="line"><span class="cl">git push -u origin main
+</span></span></code></pre></div><p>步骤2: 手动添加<code>gh-pages</code>分支</p>
+<p><img loading="lazy" src="gh-pages-branch.jpg" alt="gh-pages-branch"  />
+</p>
+<p>步骤3: 接着在Settings下的Actions/General里，滑到最下面，打开Read and Write Permissions</p>
+<p><img loading="lazy" src="actions_permission.jpg" alt="actions_permission"  />
+</p>
+<p>步骤4: 在Pages下的Build and deployment，将Source更换为GitHub Actions</p>
+<p><img loading="lazy" src="deploy_branch.png" alt="deploy_branch"  />
+</p>
+<p>步骤5: 添加workflow</p>
+<p>导航到博客文件夹根目录</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mkdir -p .github/workflows
+</span></span><span class="line"><span class="cl">touch .github/workflows/hugo.yaml
+</span></span><span class="line"><span class="cl">vim .github/workflows/hugo.yaml
+</span></span></code></pre></div><p>接着将下面代码复制到<code>.github/workflows/hugo.yaml</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Sample workflow for building and deploying a Hugo site to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy Hugo site to Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">on</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Runs on pushes targeting the default branch</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">push</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="l">main</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Allows you to run this workflow manually from the Actions tab</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">permissions</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l">read</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">pages</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">id-token</span><span class="p">:</span><span class="w"> </span><span class="l">write</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">concurrency</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">group</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;pages&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">cancel-in-progress</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Default to bash</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">defaults</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l">bash</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">jobs</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Build job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">build</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">HUGO_VERSION</span><span class="p">:</span><span class="w"> </span><span class="m">0.128.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Hugo CLI</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+</span></span></span><span class="line"><span class="cl"><span class="sd">          &amp;&amp; sudo dpkg -i ${{ runner.temp }}/hugo.deb          </span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Dart Sass</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">sudo snap install dart-sass</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Checkout</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/checkout@v4</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">submodules</span><span class="p">:</span><span class="w"> </span><span class="l">recursive</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">fetch-depth</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Setup Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/configure-pages@v5</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Install Node.js dependencies</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;[[ -f package-lock.json || -f npm-shrinkwrap.json ]] &amp;&amp; npm ci || true&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build with Hugo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">env</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">HUGO_CACHEDIR</span><span class="p">:</span><span class="w"> </span><span class="l">${{ runner.temp }}/hugo_cache</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">HUGO_ENVIRONMENT</span><span class="p">:</span><span class="w"> </span><span class="l">production</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">TZ</span><span class="p">:</span><span class="w"> </span><span class="l">America/Los_Angeles</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
+</span></span></span><span class="line"><span class="cl"><span class="sd">          hugo \
+</span></span></span><span class="line"><span class="cl"><span class="sd">            --gc \
+</span></span></span><span class="line"><span class="cl"><span class="sd">            --minify \
+</span></span></span><span class="line"><span class="cl"><span class="sd">            --baseURL &#34;${{ steps.pages.outputs.base_url }}/&#34;          </span><span class="w">          
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Upload artifact</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/upload-pages-artifact@v3</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l">./public</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># Deployment job</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">github-pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">${{ steps.deployment.outputs.page_url }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l">ubuntu-latest</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">needs</span><span class="p">:</span><span class="w"> </span><span class="l">build</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">steps</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Deploy to GitHub Pages</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l">deployment</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">actions/deploy-pages@v4</span><span class="w">
+</span></span></span></code></pre></div><p>步骤6: 上传到GitHub</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Add workflow&#34;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><p><img loading="lazy" src="success.png" alt="success"  />
+</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/blog/tags/hugo/">Hugo</a></li>
+      <li><a href="http://localhost:1313/blog/tags/github-pages/">GitHub Pages</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/blog/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

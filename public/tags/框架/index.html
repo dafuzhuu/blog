@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tags | Blog</title>
+<title>框架 | Blog</title>
 <meta name="keywords" content="">
 <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 <meta name="author" content="Dafu">
-<link rel="canonical" href="http://localhost:1313/blog/tags/">
+<link rel="canonical" href="http://localhost:1313/blog/tags/%E6%A1%86%E6%9E%B6/">
 <link crossorigin="anonymous" href="/blog/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/tags/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/tags/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/tags/%E6%A1%86%E6%9E%B6/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/tags/%E6%A1%86%E6%9E%B6/">
 <noscript>
     <style>
         #theme-toggle,
@@ -59,13 +59,13 @@
 </noscript>
   
 
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="框架" />
 <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/blog/tags/" />
+<meta property="og:url" content="http://localhost:1313/blog/tags/%E6%A1%86%E6%9E%B6/" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Tags"/>
+<meta name="twitter:title" content="框架"/>
 <meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"/>
 
 </head>
@@ -122,37 +122,39 @@
             </li>
             <li>
                 <a href="http://localhost:1313/blog/tags/" title="Tags">
-                    <span class="active">Tags</span>
+                    <span>Tags</span>
                 </a>
             </li>
         </ul>
     </nav>
 </header>
-<main class="main">
-<header class="page-header">
-    <h1>Tags</h1>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/tags/">Tags</a></div>
+  <h1>
+    框架
+    <a href="/blog/tags/%E6%A1%86%E6%9E%B6/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
 </header>
 
-<ul class="terms-tags">
-    <li>
-        <a href="http://localhost:1313/blog/tags/github-pages/">GitHub Pages <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/blog/tags/hugo/">Hugo <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/blog/tags/toefl/">TOEFL <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/blog/tags/%E5%9B%A0%E5%AD%90/">因子 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/blog/tags/%E6%A0%87%E5%8C%96/">标化 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-    <li>
-        <a href="http://localhost:1313/blog/tags/%E6%A1%86%E6%9E%B6/">框架 <sup><strong><sup>1</sup></strong></sup> </a>
-    </li>
-</ul>
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">基于JoinQuant的因子回测框架
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>from jqfactor import get_factor_values, neutralize, winsorize_med, standardlize from jqfactor import Factor, calc_factors import datetime import pandas as pd import numpy as np import matplotlib.pyplot as plt import statsmodels.api as sm from scipy.stats import spearmanr,pearsonr import matplotlib.pyplot as plt import matplotlib.dates as mdates import copy import time plt.rcParams[&#39;font.sans-serif&#39;] = [&#39;SimHei&#39;] # 用来正常显示中文标签 plt.rcParams[&#39;axes.unicode_minus&#39;] = False # 用来正常显示负号 获取数据 获取交易日 输入：start_date（起始日期），end_date（终止日期），freq（频率），count（None）
+# 1.1-获取交易日 def get_calendar(start_date=None, end_date=None, freq=&#39;D&#39;, count=None): &#34;&#34;&#34; params: start_date(Timestamp)：起始日期，年月日 end_date(Timestamp)：终止日期，年月日 freq(str)：交易日频率，默认每天 - &#39;W&#39;: 每周 - &#39;M&#39;: 每月 - &#39;Q&#39;: 每季度 - &#39;Y&#39;: 每年 count(int)：获取终止日期前交易日数量 return: df....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-25 12:07:27 +0800 CST'>August 25, 2024</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Dafu</footer>
+  <a class="entry-link" aria-label="post link to 基于JoinQuant的因子回测框架" href="http://localhost:1313/blog/posts/factor_framework/"></a>
+</article>
     </main>
     
 <footer class="footer">
