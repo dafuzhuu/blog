@@ -1,4 +1,88 @@
-baseURL: 
+baseURL: https://dafuzhuu.github.io/blog/
 languageCode: en-us
-title: My New Hugo Site
+title: Blog
 theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 12
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Dafu
+  # author: ["Me", "You"] # multiple authors
+
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: true
+  # disableSpecial1stPost: true
+  displayFullLangName: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+
+  assets:
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+
+  profileMode:
+    enabled: true
+    title: Dafu Zhu
+    imageUrl: "https://avatars.githubusercontent.com/u/156023557?s=400&u=ec87fdd875686fc2a081b274151f786c8fdf4e49&v=4"
+    imageTitle: my image
+    # imageWidth: 120
+    # imageHeight: 120
+    buttons:
+      - name: Archives
+        url: archives
+      - name: Tags
+        url: tags
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/dafuzhuu/docs"
+
+  editPost:
+    URL: "https://github.com/dafuzhuu/docs/tree/main/content"
+    Text: "Edit" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+
+outputs:
+  home:
+   - HTML
+   - RSS
+   - JSON
