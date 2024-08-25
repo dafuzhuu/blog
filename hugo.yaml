@@ -53,9 +53,9 @@ params:
 
   assets:
     favicon: "/blog/assets/favicon.ico"
-    favicon16x16: "https://dafuzhuu.github.io/blog/assets/favicon-16x16.png"
-    favicon32x32: "https://dafuzhuu.github.io/blog/assets/favicon-32x32.png"
-    apple_touch_icon: "https://dafuzhuu.github.io/blog/assets/apple-touch-icon.png"
+    favicon16x16: "/blog/assets/favicon-16x16.png"
+    favicon32x32: "/blog/assets/favicon-32x32.png"
+    apple_touch_icon: "/blog/assets/apple-touch-icon.png"
 
   profileMode:
     enabled: true
