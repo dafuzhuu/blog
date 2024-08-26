@@ -65,7 +65,7 @@ params:
     # imageWidth: 120
     # imageHeight: 120
     buttons:
-      - name: Archives
+      - name: Archive
         url: archives
       - name: Tags
         url: tags
