@@ -1,7 +1,7 @@
 +++
 title = '15分钟用Hugo+Github Pages搭建博客'
 date = 2024-08-24T21:15:11+08:00
-tags = ["Hugo", "GitHub Pages"]
+tags = ["Hugo"]
 draft = false
 +++
 

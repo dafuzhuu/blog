@@ -25,7 +25,11 @@ draft = false
 | grind            | v. 磨碎                 |
 | abrasive         | adj./n. 研磨的          |
 | fusion           | n. 融合                 |
-
+| subsistence      | n. 维持生计                 |
+| carp             | n. 鲤鱼                 |
+| scoop            | v. 舀               |
+| porcelains       | n. 瓷器                 |
+| fairs            | n. 集市                 |
 
 # 长难句理解
 
@@ -44,3 +48,11 @@ draft = false
 "did not privilege one function over another" 是个很漂亮的写法，
 
 **privilege A over B**，等价于prefer A to B，consider A more important than B
+
+:white_check_mark:TPO74 The Commercialization of Pearl River Agriculture
+
+这篇特别多坑
+
+> Peasant farmers produced on their own plots much of the food the family consumed.
+
+主干：farmers produced food
