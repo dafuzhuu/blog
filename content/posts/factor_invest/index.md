@@ -4,6 +4,7 @@ date = 2024-08-28T00:25:16+08:00
 tags = ['因子']
 description = '每天读一点，不着急'
 draft = false
+math = true
 +++
 
 # 回归检验
