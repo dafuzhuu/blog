@@ -1,8 +1,8 @@
 +++
-title = '备考TOEFL'
+title = 'TOEFL刷题积累'
 date = 2024-08-25T00:51:34+08:00
 description = '积累TOEFL刷题后精读的收获'
-tags = ["TOEFL", "标化"]
+tags = ["TOEFL"]
 draft = false
 +++
 
