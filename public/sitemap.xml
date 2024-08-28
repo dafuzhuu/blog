@@ -3,16 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2024-08-25T12:07:27+08:00</lastmod>
+    <lastmod>2024-08-28T00:25:16+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/</loc>
-    <lastmod>2024-08-25T12:07:27+08:00</lastmod>
+    <lastmod>2024-08-28T00:25:16+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/</loc>
-    <lastmod>2024-08-25T12:07:27+08:00</lastmod>
+    <lastmod>2024-08-28T00:25:16+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/%E5%9B%A0%E5%AD%90/</loc>
-    <lastmod>2024-08-25T12:07:27+08:00</lastmod>
+    <lastmod>2024-08-28T00:25:16+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/posts/factor_invest/</loc>
+    <lastmod>2024-08-28T00:25:16+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/factor_framework/</loc>
     <lastmod>2024-08-25T12:07:27+08:00</lastmod>
@@ -30,9 +33,6 @@
     <lastmod>2024-08-25T00:51:34+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/posts/demo/</loc>
-    <lastmod>2024-08-24T21:15:11+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/tags/github-pages/</loc>
     <lastmod>2024-08-24T21:15:11+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/blog/tags/hugo/</loc>

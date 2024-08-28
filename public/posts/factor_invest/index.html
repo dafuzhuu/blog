@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>因子投资慢读计划 | Blog</title>
+<meta name="keywords" content="因子">
+<meta name="description" content="每天读一点，不着急">
+<meta name="author" content="Dafu">
+<link rel="canonical" href="http://localhost:1313/blog/posts/factor_invest/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.54405a410796490bc874ab6181fac9b675753cc2b91375d8f882566459eca428.css" integrity="sha256-VEBaQQeWSQvIdKthgfrJtnV1PMK5E3XY&#43;IJWZFnspCg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blog/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blog/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/blog/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/posts/factor_invest/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.min.js" defer></script>
+
+<script defer
+  src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  
+
+<meta property="og:title" content="因子投资慢读计划" />
+<meta property="og:description" content="每天读一点，不着急" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/posts/factor_invest/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-08-28T00:25:16+08:00" />
+<meta property="article:modified_time" content="2024-08-28T00:25:16+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="因子投资慢读计划"/>
+<meta name="twitter:description" content="每天读一点，不着急"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/blog/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "因子投资慢读计划",
+      "item": "http://localhost:1313/blog/posts/factor_invest/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "因子投资慢读计划",
+  "name": "因子投资慢读计划",
+  "description": "每天读一点，不着急",
+  "keywords": [
+    "因子"
+  ],
+  "articleBody": "回归检验 时间序列回归 对某只股票 $i$\n$$ R_{it}^e=\\alpha_i+\\beta_i^T\\lambda_t+\\epsilon_t, \\quad t=1,2,\\cdots,T $$\n时序回归：首先固定$i$，以这只股票在不同时间上的数据为样本，做OLS回归，得到属于这只股票的$\\beta_i^T,\\alpha_i,\\epsilon_i$。OLS回归的步骤如下\n$$ \\mathbf{R}_i = \\mathbf{X}_i \\mathbf{b}_i + \\boldsymbol{\\epsilon}_i $$ 其中\n$$\\mathbf{R}_i = \\begin{pmatrix} R_{i1}^e \\\\ R_{i2}^e \\\\ \\vdots \\\\ R_{iT}^e\\\\ \\end{pmatrix}_{T\\times 1}, \\mathbf{X}_i = \\begin{pmatrix} 1 \u0026 \\lambda_1^T \\\\ 1 \u0026 \\lambda_2^T \\\\ \\vdots \u0026 \\vdots \\\\ 1 \u0026 \\lambda_T^T \\end{pmatrix}_{T \\times (k+1)}, \\mathbf{b}_i = \\begin{pmatrix} \\alpha_i \\\\ \\beta_i \\end{pmatrix}_{(k+1) \\times 1}, \\boldsymbol{\\epsilon}_i = \\begin{pmatrix} \\epsilon_{i1} \\\\ \\epsilon_{i2} \\\\ \\vdots \\\\ \\epsilon_{iT} \\end{pmatrix}_{T\\times 1} $$\n我们希望通过最小化误差平方和来估计 $\\mathbf{b}_i$，即最小化以下目标函数：\n$$ S(\\mathbf{b}_i) = \\sum_{t=1}^T \\epsilon_{it}^2 = \\boldsymbol{\\epsilon}_i^T \\boldsymbol{\\epsilon}_i $$\n其中 $\\boldsymbol{\\epsilon}_i = \\mathbf{R}_i - \\mathbf{X}_i \\mathbf{b}_i$，所以我们可以将目标函数写为：\n$$ S(\\mathbf{b}_i) = (\\mathbf{R}_i - \\mathbf{X}_i \\mathbf{b}_i)^2 = (\\mathbf{R}_i - \\mathbf{X}_i \\mathbf{b}_i)^T (\\mathbf{R}_i - \\mathbf{X}_i \\mathbf{b}_i) $$\n展开后得到：\n$$ S(\\mathbf{b}_i) = \\mathbf{R}_i^T \\mathbf{R}_i - 2\\mathbf{b}_i^T \\mathbf{X}_i^T \\mathbf{R}_i + \\mathbf{b}_i^T \\mathbf{X}_i^T \\mathbf{X}_i \\mathbf{b}_i $$\n为了找到最小值，我们需要对 $S(\\mathbf{b}_i)$ 关于 $\\mathbf{b}_i$ 求导并令其等于零：\n$$ \\frac{\\partial S(\\mathbf{b}_i)}{\\partial \\mathbf{b}_i} = -2\\mathbf{X}_i^T \\mathbf{R}_i + 2\\mathbf{X}_i^T \\mathbf{X}_i \\mathbf{b}_i = 0 $$\n简化后得到：\n$$ \\mathbf{X}_i^T \\mathbf{X}_i \\mathbf{b}_i = \\mathbf{X}_i^T \\mathbf{R}_i $$\n由于 $\\mathbf{X}_i^T \\mathbf{X}_i$ 是可逆的（假设不存在多重共线性），我们可以得到：\n$$ \\hat{\\mathbf{b}}_i = (\\mathbf{X}_i^T \\mathbf{X}_i)^{-1} \\mathbf{X}_i^T \\mathbf{R}_i $$\n$\\hat{\\mathbf{b}}_i$ 是回归系数的估计值，包括 $\\hat{\\alpha}_i$ 和 $\\hat{\\beta}_i$：\n$$ \\hat{\\mathbf{b}}_i = \\begin{pmatrix} \\hat{\\alpha}_i \\\\ \\hat{\\beta}_i \\end{pmatrix} $$\n误差项 $\\epsilon_{it}$ 的估计值可以通过以下公式得到：\n$$ \\hat{\\boldsymbol{\\epsilon}}_i = \\mathbf{R}_i - \\mathbf{X}_i \\hat{\\mathbf{b}}_i $$\n这是一张散点图，横轴是用时序回归估计出来的 $\\hat{\\beta}_i$ ，纵轴是通过公式 $E_t[R_{it}^e]=\\hat{\\alpha}_i+\\hat{\\beta}_iE_t[\\lambda_t]$ 估计出来的预期收益率。因此，这张图不是最小化 $\\alpha_i$ 的结果。\n既然我们已经估计出 $\\alpha_i$，下面要检验其是否联合为零。常用的方法是GRS检验。\n",
+  "wordCount" : "199",
+  "inLanguage": "en",
+  "datePublished": "2024-08-28T00:25:16+08:00",
+  "dateModified": "2024-08-28T00:25:16+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Dafu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/posts/factor_invest/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/blog/assets/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/blog/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/blog/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      因子投资慢读计划
+    </h1>
+    <div class="post-description">
+      每天读一点，不着急
+    </div>
+    <div class="post-meta"><span title='2024-08-28 00:25:16 +0800 CST'>August 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu&nbsp;|&nbsp;<a href="https://github.com/dafuzhuu/blog/tree/main/content/posts/factor_invest/index.md" rel="noopener noreferrer" target="_blank">Edit</a>
+
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#%e5%9b%9e%e5%bd%92%e6%a3%80%e9%aa%8c" aria-label="回归检验">回归检验</a><ul>
+                        
+                <li>
+                    <a href="#%e6%97%b6%e9%97%b4%e5%ba%8f%e5%88%97%e5%9b%9e%e5%bd%92" aria-label="时间序列回归">时间序列回归</a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="回归检验">回归检验<a hidden class="anchor" aria-hidden="true" href="#回归检验">#</a></h1>
+<h2 id="时间序列回归">时间序列回归<a hidden class="anchor" aria-hidden="true" href="#时间序列回归">#</a></h2>
+<p>对某只股票 <code>$i$</code></p>
+<p><code>$$ R_{it}^e=\alpha_i+\beta_i^T\lambda_t+\epsilon_t, \quad t=1,2,\cdots,T $$</code></p>
+<p>时序回归：首先固定<code>$i$</code>，以这只股票在不同时间上的数据为样本，做OLS回归，得到属于这只股票的<code>$\beta_i^T,\alpha_i,\epsilon_i$</code>。OLS回归的步骤如下</p>
+<p>$$
+\mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i + \boldsymbol{\epsilon}_i
+$$
+其中</p>
+<p><code>$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp; \lambda_1^T \\ 1 &amp; \lambda_2^T \\ \vdots &amp; \vdots \\ 1 &amp; \lambda_T^T \end{pmatrix}_{T \times (k+1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k+1) \times 1},  \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$</code></p>
+<p>我们希望通过最小化误差平方和来估计 <code>$\mathbf{b}_i$</code>，即最小化以下目标函数：</p>
+<p><code>$$ S(\mathbf{b}_i) = \sum_{t=1}^T \epsilon_{it}^2 = \boldsymbol{\epsilon}_i^T \boldsymbol{\epsilon}_i $$</code></p>
+<p>其中 <code>$\boldsymbol{\epsilon}_i = \mathbf{R}_i - \mathbf{X}_i \mathbf{b}_i$</code>，所以我们可以将目标函数写为：</p>
+<p><code>$$ S(\mathbf{b}_i) = (\mathbf{R}_i - \mathbf{X}_i \mathbf{b}_i)^2 = (\mathbf{R}_i - \mathbf{X}_i \mathbf{b}_i)^T (\mathbf{R}_i - \mathbf{X}_i \mathbf{b}_i) $$</code></p>
+<p>展开后得到：</p>
+<p><code>$$ S(\mathbf{b}_i) = \mathbf{R}_i^T \mathbf{R}_i - 2\mathbf{b}_i^T \mathbf{X}_i^T \mathbf{R}_i + \mathbf{b}_i^T \mathbf{X}_i^T \mathbf{X}_i \mathbf{b}_i $$</code></p>
+<p>为了找到最小值，我们需要对 <code>$S(\mathbf{b}_i)$</code> 关于 <code>$\mathbf{b}_i$</code> 求导并令其等于零：</p>
+<p><code>$$ \frac{\partial S(\mathbf{b}_i)}{\partial \mathbf{b}_i} = -2\mathbf{X}_i^T \mathbf{R}_i + 2\mathbf{X}_i^T \mathbf{X}_i \mathbf{b}_i = 0 $$</code></p>
+<p>简化后得到：</p>
+<p><code>$$ \mathbf{X}_i^T \mathbf{X}_i \mathbf{b}_i = \mathbf{X}_i^T \mathbf{R}_i $$</code></p>
+<p>由于 <code>$\mathbf{X}_i^T \mathbf{X}_i$</code> 是可逆的（假设不存在多重共线性），我们可以得到：</p>
+<p><code>$$ \hat{\mathbf{b}}_i = (\mathbf{X}_i^T \mathbf{X}_i)^{-1} \mathbf{X}_i^T \mathbf{R}_i $$</code></p>
+<p><code>$\hat{\mathbf{b}}_i$</code> 是回归系数的估计值，包括 <code>$\hat{\alpha}_i$ 和 $\hat{\beta}_i$</code>：</p>
+<p><code>$$ \hat{\mathbf{b}}_i = \begin{pmatrix} \hat{\alpha}_i \\ \hat{\beta}_i \end{pmatrix} $$</code></p>
+<p>误差项 <code>$\epsilon_{it}$</code> 的估计值可以通过以下公式得到：</p>
+<p><code>$$ \hat{\boldsymbol{\epsilon}}_i = \mathbf{R}_i - \mathbf{X}_i \hat{\mathbf{b}}_i $$</code></p>
+<p><img loading="lazy" src="%e6%97%b6%e5%ba%8f%e5%9b%9e%e5%bd%92.png" alt="时序回归"  />
+</p>
+<p>这是一张散点图，横轴是用时序回归估计出来的 <code>$\hat{\beta}_i$</code> ，纵轴是通过公式 <code>$E_t[R_{it}^e]=\hat{\alpha}_i+\hat{\beta}_iE_t[\lambda_t]$</code> 估计出来的预期收益率。因此，这张图不是最小化 <code>$\alpha_i$</code> 的结果。</p>
+<p>既然我们已经估计出 <code>$\alpha_i$</code>，下面要检验其是否联合为零。常用的方法是GRS检验。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/blog/tags/%E5%9B%A0%E5%AD%90/">因子</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/blog/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

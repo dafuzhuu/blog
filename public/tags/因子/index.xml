@@ -6,8 +6,15 @@
     <description>Recent content in 因子 on Blog</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Aug 2024 12:07:27 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 00:25:16 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/%E5%9B%A0%E5%AD%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>因子投资慢读计划</title>
+      <link>http://localhost:1313/blog/posts/factor_invest/</link>
+      <pubDate>Wed, 28 Aug 2024 00:25:16 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/factor_invest/</guid>
+      <description>每天读一点，不着急</description>
+    </item>
     <item>
       <title>基于JoinQuant的因子回测框架</title>
       <link>http://localhost:1313/blog/posts/factor_framework/</link>
