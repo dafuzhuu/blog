@@ -86,8 +86,6 @@ tags = ['网课', '自学']
 
 # Elective Courses
 
-以下是转化为`[]()`格式的链接列表，其中文字部分取自冒号后的内容：
-
 - [Applying to U.S. Universities](https://www.coursera.org/learn/study-in-usa)
 - [JPMorgan量化项目](https://www.theforage.com/simulations/jpmorgan/quantitative-research-11oc)
 - [Digital Signal Processing Specialization](https://www.coursera.org/specializations/digital-signal-processing)
@@ -101,8 +99,6 @@ tags = ['网课', '自学']
 - [Recommender Systems Capstone](https://www.coursera.org/learn/recommeder-systems-capstone?specialization=recommender-systems)
 
 # 其他
-
-以下是转化为`[]()`格式的链接列表，其中文字部分取自冒号后的内容：
 
 - [概率论与统计学](https://probability.xmu.edu.cn/)
 - [动手学深度学习](https://zh.d2l.ai/)

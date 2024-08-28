@@ -149,11 +149,11 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>回归检验 时间序列回归 对某只股票$i$
+    <p>回归检验 时间序列回归 对某只股票 $i$
 $$ R_{it}^e=\alpha_i&#43;\beta_i^T\lambda_t&#43;\epsilon_t, \quad t=1,2,\cdots,T $$
 时序回归：首先固定$i$，以这只股票在不同时间上的数据为样本，做OLS回归，得到属于这只股票的$\beta_i^T,\alpha_i,\epsilon_i$。OLS回归的步骤如下
 $$ \mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i &#43; \boldsymbol{\epsilon}_i $$ 其中
-$$ \mathbf{R}i = \begin{pmatrix} R{i1}^e \ R_{i2}^e \ \vdots \ R_{iT}^e \end{pmatrix}{T\times 1}, \mathbf{X}i = \begin{pmatrix} 1 &amp; \lambda_1^T \ 1 &amp; \lambda_2^T \ \vdots &amp; \vdots \ 1 &amp; \lambda_T^T \end{pmatrix}{T \times (k&#43;1)}, \mathbf{b}i = \begin{pmatrix} \alpha_i \ \beta_i \end{pmatrix}{(k&#43;1) \times 1}, \boldsymbol{\epsilon}i = \begin{pmatrix} \epsilon{i1} \ \epsilon{i2} \ \vdots \ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$...</p>
+$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp; \lambda_1^T \\ 1 &amp; \lambda_2^T \\ \vdots &amp; \vdots \\ 1 &amp; \lambda_T^T \end{pmatrix}_{T \times (k&#43;1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k&#43;1) \times 1}, \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$...</p>
   </div>
   <footer class="entry-footer"><span title='2024-08-28 00:25:16 +0800 CST'>August 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu</footer>
   <a class="entry-link" aria-label="post link to 因子投资慢读计划" href="http://localhost:1313/blog/posts/factor_invest/"></a>

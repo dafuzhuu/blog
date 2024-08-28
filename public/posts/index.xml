@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Blog</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Aug 2024 00:25:16 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2024 21:45:01 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coursera自学指南</title>
+      <link>http://localhost:1313/blog/posts/study_plan/</link>
+      <pubDate>Wed, 28 Aug 2024 21:45:01 +0800</pubDate>
+      <guid>http://localhost:1313/blog/posts/study_plan/</guid>
+      <description>Math Matrix Algebra for Engineers Advanced Linear Algebra Differential Equations for Engineers Vector Calculus for Engineers Mathematics for Engineers: The Capstone Course Introduction to Complex Analysis Combinatorics and Probability Stochastic Processes: Data Analysis and Computer Simulation Bayesian Statistics Statistical Learning Machine Learning with Python-From Linear Models to Deep Learning Fundamentals of Quantitative Modeling Introduction to Predictive Modeling Discrete Optimization Optimization for Decision Making Advanced Models for Decision Making Simulation Models for Decision Making Operations Research (1): Models and Applications Operations Research (2): Optimization Algorithms Operations Research (3): Theory Analytic Combinatorics Mathematical Thinking Mathematical Thinking in Computer Science Number Theory and Cryptography Delivery Problem Computer Science CS50&amp;rsquo;s Introduction to Computer Science Object-Oriented Data Structures in C++ Algorithmic Toolbox Ordered Data Structures Unordered Data Structures Introduction to Git and GitHub CS 61B Spring 2024 Data Structures Algorithms on Graphs Algorithms on Strings Advanced Algorithms and Complexity Introduction to Graph Theory Divide and Conquer, Sorting and Searching, and Randomized Algorithms Graph Search, Shortest Paths, and Data Structures Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming Shortest Paths Revisited, NP-Complete Problems and What To Do About Them Probabilistic Graphical Models 1: Representation Probabilistic Graphical Models 2: Inference Probabilistic Graphical Models 3: Learning Deep Neural Networks with PyTorch Natural Language Processing with Classification and Vector Spaces Text Retrieval and Search Engines Text Mining and Analytics Applied Text Mining in Python Pattern Discovery in Data Mining Cluster Analysis in Data Mining 李宏毅2023春机器学习 Fundamentals of Reinforcement Learning Sample-based Learning Methods Prediction and Control with Function Approximation A Complete Reinforcement Learning System (Capstone) Reinforcement Learning: Qwik Start Applied Plotting, Charting &amp;amp; Data Representation in Python Narrative Economics Social and Economic Networks Applied Social Network Analysis in Python Tools of the Trade: Linux and SQL Finance Introduction to Financial Engineering and Risk Management Interest Rate Models Pricing Options with Mathematical Models Term-Structure and Credit Derivatives Optimization Methods in Asset Management Advanced Topics in Derivative Pricing Computational Methods in Pricing and Model Calibration 机器学习与量化投资（复旦） Elective Courses 以下是转化为[]()格式的链接列表，其中文字部分取自冒号后的内容：</description>
+    </item>
     <item>
       <title>因子投资慢读计划</title>
       <link>http://localhost:1313/blog/posts/factor_invest/</link>
@@ -24,10 +31,10 @@
 # 1.1-获取交易日 def get_calendar(start_date=None, end_date=None, freq=&amp;#39;D&amp;#39;, count=None): &amp;#34;&amp;#34;&amp;#34; params: start_date(Timestamp)：起始日期，年月日 end_date(Timestamp)：终止日期，年月日 freq(str)：交易日频率，默认每天 - &amp;#39;W&amp;#39;: 每周 - &amp;#39;M&amp;#39;: 每月 - &amp;#39;Q&amp;#39;: 每季度 - &amp;#39;Y&amp;#39;: 每年 count(int)：获取终止日期前交易日数量 return: df.</description>
     </item>
     <item>
-      <title>备考TOEFL</title>
-      <link>http://localhost:1313/blog/posts/toefl/</link>
+      <title>TOEFL刷题积累</title>
+      <link>http://localhost:1313/blog/posts/toefl%E5%88%B7%E9%A2%98/</link>
       <pubDate>Sun, 25 Aug 2024 00:51:34 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/toefl/</guid>
+      <guid>http://localhost:1313/blog/posts/toefl%E5%88%B7%E9%A2%98/</guid>
       <description>积累TOEFL刷题后精读的收获</description>
     </item>
     <item>
