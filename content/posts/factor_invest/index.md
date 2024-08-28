@@ -1,7 +1,7 @@
 +++
 title = '因子投资慢读计划'
 date = 2024-08-28T00:25:16+08:00
-tags = ['因子']
+tags = ['因子', '自学']
 description = '每天读一点，不着急'
 draft = false
 math = true
