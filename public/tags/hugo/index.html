@@ -145,6 +145,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">如何优雅地整理子文章
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>在编辑一篇总纲式文章时，可能有些技术细节不想被呈现在主干里，而是希望有个链接点击后可以跳到新的文章。这时，我们可以新建一个子文章，然后在总纲中插入一个链接，指向子文章的 URL。
+由于Hugo默认渲染文件名为index.md，如果直接把子文章和index.md放在同一目录下，那么子文章无法被渲染，访问时会显示404。一个比较优雅地解决办法是新建目录 content/chapters，然后把子文章放在 content/chapters/sub_article.md 这样的路径下。这样，子文章就可以被渲染了。
+在总纲文章中插入链接：
+[子文章标题](/chapters/sub_article/) 由于content文件夹对应根目录，插入链接时不能忽略开头的斜杠，否则会导致找不到文件。</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-29 23:36:56 +0800 CST'>August 29, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu</footer>
+  <a class="entry-link" aria-label="post link to 如何优雅地整理子文章" href="http://localhost:1313/blog/posts/sub_articles/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">15分钟用Hugo&#43;Github Pages搭建博客
     </h2>
   </header>

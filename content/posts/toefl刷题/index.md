@@ -30,6 +30,11 @@ draft = false
 | scoop            | v. 舀               |
 | porcelains       | n. 瓷器                 |
 | fairs            | n. 集市                 |
+| sheer            | adj. 纯粹的             |
+| insulate         | v. 隔绝                 |
+| reptile          | n. 爬行动物             |
+| feat            | n. 壮举，成就             |
+| bask            | v. 晒太阳，取暖             |
 
 # 长难句理解
 
