@@ -6,8 +6,19 @@
     <description>Recent content in Chapters on Blog</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 23:26:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 12:09:29 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/chapters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OLS回归</title>
+      <link>http://localhost:1313/blog/chapters/ols%E5%9B%9E%E5%BD%92/</link>
+      <pubDate>Sat, 31 Aug 2024 12:09:29 +0800</pubDate>
+      <guid>http://localhost:1313/blog/chapters/ols%E5%9B%9E%E5%BD%92/</guid>
+      <description>OLS回归的步骤如下
+$$ \mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i + \boldsymbol{\epsilon}_i $$ 其中
+$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp;amp; \lambda_1^T \\ 1 &amp;amp; \lambda_2^T \\ \vdots &amp;amp; \vdots \\ 1 &amp;amp; \lambda_T^T \end{pmatrix}_{T \times (k+1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k+1) \times 1}, \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$
+我们希望通过最小化误差平方和来估计 $\mathbf{b}_i$，即最小化以下目标函数：
+$$ S(\mathbf{b}_i) = \sum_{t=1}^T \epsilon_{it}^2 = \boldsymbol{\epsilon}_i^T \boldsymbol{\epsilon}_i $$</description>
+    </item>
     <item>
       <title>GRS</title>
       <link>http://localhost:1313/blog/chapters/grs/</link>

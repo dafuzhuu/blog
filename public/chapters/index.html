@@ -160,6 +160,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">OLS回归
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>OLS回归的步骤如下
+$$ \mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i &#43; \boldsymbol{\epsilon}_i $$ 其中
+$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp; \lambda_1^T \\ 1 &amp; \lambda_2^T \\ \vdots &amp; \vdots \\ 1 &amp; \lambda_T^T \end{pmatrix}_{T \times (k&#43;1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k&#43;1) \times 1}, \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$
+我们希望通过最小化误差平方和来估计 $\mathbf{b}_i$，即最小化以下目标函数：
+$$ S(\mathbf{b}_i) = \sum_{t=1}^T \epsilon_{it}^2 = \boldsymbol{\epsilon}_i^T \boldsymbol{\epsilon}_i $$...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-31 12:09:29 +0800 CST'>August 31, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu</footer>
+  <a class="entry-link" aria-label="post link to OLS回归" href="http://localhost:1313/blog/chapters/ols%E5%9B%9E%E5%BD%92/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">GRS
     </h2>
   </header>
