@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
     <link>http://localhost:1313/blog/</link>
     <description>Recent content on Blog</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 23:36:56 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2024 23:26:10 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>如何优雅地整理附属文档</title>
-      <link>http://localhost:1313/blog/posts/sub_articles/</link>
-      <pubDate>Thu, 29 Aug 2024 23:36:56 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/sub_articles/</guid>
-      <description>在编辑一篇总纲式文章时，可能出现这样的问题：有些技术细节不想被呈现在主干里，而是希望有个链接点击后可以跳到新的文章，但我们又不希望这篇新文章也作为独立的文章被索引到Archive里。
-由于Hugo默认渲染文件名为index.md，如果直接把附属文档和主文档index.md放在同一目录下，那么附属文档无法被渲染，访问时会显示404。
-一个比较优雅地解决办法是新建目录 content/chapters，然后把附属文档放在 content/chapters/sub_article.md 这样的路径下，这样子就可以被渲染了。
-具体操作方法是
-cd blog hugo new chapters/sub_article.md 保持头部配置 draft = true 即可，使得附属文档不会被渲染到主页，但仍然可以被访问到。
-在总纲文章中插入链接，建议使用绝对路径
-[标题](/blog/chapters/sub_article/) 比如：GRS检验</description>
+      <title>GRS</title>
+      <link>http://localhost:1313/blog/chapters/grs/</link>
+      <pubDate>Thu, 29 Aug 2024 23:26:10 +0800</pubDate>
+      <guid>http://localhost:1313/blog/chapters/grs/</guid>
+      <description>Example content</description>
     </item>
     <item>
       <title>Coursera自学指南</title>
@@ -33,39 +27,42 @@ cd blog hugo new chapters/sub_article.md 保持头部配置 draft = true 即可�
       <link>http://localhost:1313/blog/posts/factor_invest/</link>
       <pubDate>Wed, 28 Aug 2024 00:25:16 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/factor_invest/</guid>
-      <description>每天读一点，不着急</description>
+      <description>回归检验 时间序列回归 对某只股票 $i$&#xA;$$ R_{it}^e=\alpha_i+\beta_i^T\lambda_t+\epsilon_t, \quad t=1,2,\cdots,T $$&#xA;时序回归：首先固定$i$，以这只股票在不同时间上的数据为样本，做OLS回归，得到属于这只股票的$\beta_i^T,\alpha_i,\epsilon_i$。OLS回归的步骤如下&#xA;$$ \mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i + \boldsymbol{\epsilon}_i $$ 其中&#xA;$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp;amp; \lambda_1^T \\ 1 &amp;amp; \lambda_2^T \\ \vdots &amp;amp; \vdots \\ 1 &amp;amp; \lambda_T^T \end{pmatrix}_{T \times (k+1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k+1) \times 1}, \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$</description>
     </item>
     <item>
       <title>基于JoinQuant的因子回测框架</title>
       <link>http://localhost:1313/blog/posts/factor_framework/</link>
       <pubDate>Sun, 25 Aug 2024 12:07:27 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/factor_framework/</guid>
-      <description>from jqfactor import get_factor_values, neutralize, winsorize_med, standardlize from jqfactor import Factor, calc_factors import datetime import pandas as pd import numpy as np import matplotlib.pyplot as plt import statsmodels.api as sm from scipy.stats import spearmanr,pearsonr import matplotlib.pyplot as plt import matplotlib.dates as mdates import copy import time plt.rcParams[&amp;#39;font.sans-serif&amp;#39;] = [&amp;#39;SimHei&amp;#39;] # 用来正常显示中文标签 plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False # 用来正常显示负号 获取数据 获取交易日 输入：start_date（起始日期），end_date（终止日期），freq（频率），count（None）
-# 1.1-获取交易日 def get_calendar(start_date=None, end_date=None, freq=&amp;#39;D&amp;#39;, count=None): &amp;#34;&amp;#34;&amp;#34; params: start_date(Timestamp)：起始日期，年月日 end_date(Timestamp)：终止日期，年月日 freq(str)：交易日频率，默认每天 - &amp;#39;W&amp;#39;: 每周 - &amp;#39;M&amp;#39;: 每月 - &amp;#39;Q&amp;#39;: 每季度 - &amp;#39;Y&amp;#39;: 每年 count(int)：获取终止日期前交易日数量 return: df.</description>
+      <description>from jqfactor import get_factor_values, neutralize, winsorize_med, standardlize from jqfactor import Factor, calc_factors import datetime import pandas as pd import numpy as np import matplotlib.pyplot as plt import statsmodels.api as sm from scipy.stats import spearmanr,pearsonr import matplotlib.pyplot as plt import matplotlib.dates as mdates import copy import time plt.rcParams[&amp;#39;font.sans-serif&amp;#39;] = [&amp;#39;SimHei&amp;#39;] # 用来正常显示中文标签 plt.rcParams[&amp;#39;axes.unicode_minus&amp;#39;] = False # 用来正常显示负号 获取数据 获取交易日 输入：start_date（起始日期），end_date（终止日期），freq（频率），count（None）&#xA;# 1.1-获取交易日 def get_calendar(start_date=None, end_date=None, freq=&amp;#39;D&amp;#39;, count=None): &amp;#34;&amp;#34;&amp;#34; params: start_date(Timestamp)：起始日期，年月日 end_date(Timestamp)：终止日期，年月日 freq(str)：交易日频率，默认每天 - &amp;#39;W&amp;#39;: 每周 - &amp;#39;M&amp;#39;: 每月 - &amp;#39;Q&amp;#39;: 每季度 - &amp;#39;Y&amp;#39;: 每年 count(int)：获取终止日期前交易日数量 return: df.</description>
     </item>
     <item>
       <title>TOEFL刷题积累</title>
       <link>http://localhost:1313/blog/posts/toefl%E5%88%B7%E9%A2%98/</link>
       <pubDate>Sun, 25 Aug 2024 00:51:34 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/toefl%E5%88%B7%E9%A2%98/</guid>
-      <description>积累TOEFL刷题后精读的收获</description>
+      <description>在刷题的过程中，积累单词、句式、语法，在做阅读的时候为写作整理素材，在做听力的时候为口语准备语料，这样才能融会贯通，而不是盲人摸象。&#xA;生词 Word Meaning onwards adv. 从&amp;hellip;起 excavate v. 挖掘 coinage n. 创造新词的动作 portmanteau term n. 合成词，portmanteau 综合的 hoof/hooves n. 蹄/蹄子（复数） rear v. 抚养，养育 padded adj. 带衬垫的 pugnosed adj. 鼻子扁平的 elaborate adj. 复杂的 , v. 详述 succulent adj. 多汁的 grind v. 磨碎 abrasive adj./n. 研磨的 fusion n. 融合 subsistence n. 维持生计 carp n. 鲤鱼 scoop v. 舀 porcelains n. 瓷器 fairs n. 集市 sheer adj. 纯粹的 insulate v. 隔绝 reptile n.</description>
     </item>
     <item>
       <title>15分钟用Hugo&#43;Github Pages搭建博客</title>
       <link>http://localhost:1313/blog/posts/demo/</link>
       <pubDate>Sat, 24 Aug 2024 21:15:11 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/demo/</guid>
-      <description>假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南
-本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）
-hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md
-随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod
-vim hugo.yaml 按&amp;quot;I&amp;quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加
-theme: PaperMod 按Esc再输入:wq保存并退出编辑
-至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面
-将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多
-首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）
-步骤1: 在终端运行仓库主页代码
-echo &amp;#34;# theplaybook-demo&amp;#34; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;#34;first commit&amp;#34; git branch -M main git remote add origin https://github.</description>
+      <description>假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南&#xA;本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）&#xA;hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md&#xA;随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod&#xA;vim hugo.yaml 按&amp;quot;I&amp;quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加&#xA;theme: PaperMod 按Esc再输入:wq保存并退出编辑&#xA;至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面&#xA;将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多&#xA;首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）&#xA;步骤1: 在终端运行仓库主页代码&#xA;echo &amp;#34;# theplaybook-demo&amp;#34; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;#34;first commit&amp;#34; git branch -M main git remote add origin https://github.</description>
+    </item>
+    <item>
+      <title>Archive</title>
+      <link>http://localhost:1313/blog/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/archives/</guid>
+      <description>archives</description>
+    </item>
+    <item>
+      <title>Search</title>
+      <link>http://localhost:1313/blog/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/search/</guid>
+      <description>search</description>
     </item>
   </channel>
 </rss>

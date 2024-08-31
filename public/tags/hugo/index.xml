@@ -1,42 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on Blog</title>
     <link>http://localhost:1313/blog/tags/hugo/</link>
     <description>Recent content in Hugo on Blog</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 23:36:56 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2024 21:15:11 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>如何优雅地整理附属文档</title>
-      <link>http://localhost:1313/blog/posts/sub_articles/</link>
-      <pubDate>Thu, 29 Aug 2024 23:36:56 +0800</pubDate>
-      <guid>http://localhost:1313/blog/posts/sub_articles/</guid>
-      <description>在编辑一篇总纲式文章时，可能出现这样的问题：有些技术细节不想被呈现在主干里，而是希望有个链接点击后可以跳到新的文章，但我们又不希望这篇新文章也作为独立的文章被索引到Archive里。
-由于Hugo默认渲染文件名为index.md，如果直接把附属文档和主文档index.md放在同一目录下，那么附属文档无法被渲染，访问时会显示404。
-一个比较优雅地解决办法是新建目录 content/chapters，然后把附属文档放在 content/chapters/sub_article.md 这样的路径下，这样子就可以被渲染了。
-具体操作方法是
-cd blog hugo new chapters/sub_article.md 保持头部配置 draft = true 即可，使得附属文档不会被渲染到主页，但仍然可以被访问到。
-在总纲文章中插入链接，建议使用绝对路径
-[标题](/blog/chapters/sub_article/) 比如：GRS检验</description>
-    </item>
     <item>
       <title>15分钟用Hugo&#43;Github Pages搭建博客</title>
       <link>http://localhost:1313/blog/posts/demo/</link>
       <pubDate>Sat, 24 Aug 2024 21:15:11 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/demo/</guid>
-      <description>假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南
-本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）
-hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md
-随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod
-vim hugo.yaml 按&amp;quot;I&amp;quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加
-theme: PaperMod 按Esc再输入:wq保存并退出编辑
-至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面
-将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多
-首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）
-步骤1: 在终端运行仓库主页代码
-echo &amp;#34;# theplaybook-demo&amp;#34; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;#34;first commit&amp;#34; git branch -M main git remote add origin https://github.</description>
+      <description>假定你的电脑已安装好Hugo，本文档可以逐行跑通，是从零开始搭建Hugo博客的简易指南&#xA;本地搭建Hugo博客 hugo new site theplaybook --format yaml cd theplaybook 用hugo new site [博客文件夹名称]指令在当前目录下新建一个Hugo模版。--format [配置文件格式]可选的格式有yaml, toml（默认toml）&#xA;hugo new docs/test.md git clone https://github.com/adityatelange/hugo-PaperMod themes/PaperMod --depth=1 git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod hugo new docs/test.md会在/content/docs下新建一个md文件test.md&#xA;随后用git导入主题PaperMod，这两句足够完成配置，更多信息见Hugo PaperMod&#xA;vim hugo.yaml 按&amp;quot;I&amp;quot;(Insert)开始编辑，删除baseURL的内容，并在最后一行下面添加&#xA;theme: PaperMod 按Esc再输入:wq保存并退出编辑&#xA;至此Hugo博客在本地的搭建已经完成，运行hugo server指令并在网址栏输入localhost:1313就可以在本地看到博客的界面&#xA;将Hugo部署到Github Pages GitHub Pages可用于免费托管静态网站，并且会分配一个像样的域名，比购买国内服务器和域名并备案要经济得多&#xA;首先在创建一个GitHub账号，新建一个仓库theplaybook-demo，保持默认配置项即可（Public仓库+不添加README）&#xA;步骤1: 在终端运行仓库主页代码&#xA;echo &amp;#34;# theplaybook-demo&amp;#34; &amp;gt;&amp;gt; README.md git add README.md git commit -m &amp;#34;first commit&amp;#34; git branch -M main git remote add origin https://github.</description>
     </item>
   </channel>
 </rss>
