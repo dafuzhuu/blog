@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Hugo隐藏部分文章 | Blog</title>
+<meta name="keywords" content="Hugo">
+<meta name="description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
+Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
+以PaperMod主题为例
+&lt;div class=&#34;archive-posts&#34;&gt; {{- range .Pages }} {{- if not .Params.hidden }} &lt;!-- 添加hidden逻辑 --&gt; {{- if eq .Kind &#34;page&#34; }} &lt;div class=&#34;archive-entry&#34;&gt; &lt;h3 class=&#34;archive-entry-title entry-hint-parent&#34;&gt; {{- .Title | markdownify }} {{- if .Draft }} &lt;span class=&#34;entry-hint&#34; title=&#34;Draft&#34;&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;15&#34; viewBox=&#34;0 -960 960 960&#34; fill=&#34;currentColor&#34;&gt; &lt;path d=&#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&#34; /&gt; &lt;/svg&gt; &lt;/span&gt; {{- end }} &lt;/h3&gt; &lt;div class=&#34;archive-meta&#34;&gt; {{- partial &#34;post_meta.">
+<meta name="author" content="Dafu">
+<link rel="canonical" href="http://localhost:1313/blog/articles/sub_articles/">
+<link crossorigin="anonymous" href="/blog/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/blog/assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/blog/assets/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/blog/assets/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/blog/assets/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/blog/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/articles/sub_articles/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+  
+
+<meta property="og:title" content="Hugo隐藏部分文章" />
+<meta property="og:description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
+Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
+以PaperMod主题为例
+&lt;div class=&#34;archive-posts&#34;&gt; {{- range .Pages }} {{- if not .Params.hidden }} &lt;!-- 添加hidden逻辑 --&gt; {{- if eq .Kind &#34;page&#34; }} &lt;div class=&#34;archive-entry&#34;&gt; &lt;h3 class=&#34;archive-entry-title entry-hint-parent&#34;&gt; {{- .Title | markdownify }} {{- if .Draft }} &lt;span class=&#34;entry-hint&#34; title=&#34;Draft&#34;&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;15&#34; viewBox=&#34;0 -960 960 960&#34; fill=&#34;currentColor&#34;&gt; &lt;path d=&#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&#34; /&gt; &lt;/svg&gt; &lt;/span&gt; {{- end }} &lt;/h3&gt; &lt;div class=&#34;archive-meta&#34;&gt; {{- partial &#34;post_meta." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/blog/articles/sub_articles/" /><meta property="article:section" content="articles" />
+<meta property="article:published_time" content="2024-08-31T10:38:24+08:00" />
+<meta property="article:modified_time" content="2024-08-31T10:38:24+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hugo隐藏部分文章"/>
+<meta name="twitter:description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
+Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
+以PaperMod主题为例
+&lt;div class=&#34;archive-posts&#34;&gt; {{- range .Pages }} {{- if not .Params.hidden }} &lt;!-- 添加hidden逻辑 --&gt; {{- if eq .Kind &#34;page&#34; }} &lt;div class=&#34;archive-entry&#34;&gt; &lt;h3 class=&#34;archive-entry-title entry-hint-parent&#34;&gt; {{- .Title | markdownify }} {{- if .Draft }} &lt;span class=&#34;entry-hint&#34; title=&#34;Draft&#34;&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;15&#34; viewBox=&#34;0 -960 960 960&#34; fill=&#34;currentColor&#34;&gt; &lt;path d=&#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&#34; /&gt; &lt;/svg&gt; &lt;/span&gt; {{- end }} &lt;/h3&gt; &lt;div class=&#34;archive-meta&#34;&gt; {{- partial &#34;post_meta."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Articles",
+      "item": "http://localhost:1313/blog/articles/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Hugo隐藏部分文章",
+      "item": "http://localhost:1313/blog/articles/sub_articles/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Hugo隐藏部分文章",
+  "name": "Hugo隐藏部分文章",
+  "description": "文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。\nHugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。\n以PaperMod主题为例\n\u0026lt;div class=\u0026#34;archive-posts\u0026#34;\u0026gt; {{- range .Pages }} {{- if not .Params.hidden }} \u0026lt;!-- 添加hidden逻辑 --\u0026gt; {{- if eq .Kind \u0026#34;page\u0026#34; }} \u0026lt;div class=\u0026#34;archive-entry\u0026#34;\u0026gt; \u0026lt;h3 class=\u0026#34;archive-entry-title entry-hint-parent\u0026#34;\u0026gt; {{- .Title | markdownify }} {{- if .Draft }} \u0026lt;span class=\u0026#34;entry-hint\u0026#34; title=\u0026#34;Draft\u0026#34;\u0026gt; \u0026lt;svg xmlns=\u0026#34;http://www.w3.org/2000/svg\u0026#34; height=\u0026#34;15\u0026#34; viewBox=\u0026#34;0 -960 960 960\u0026#34; fill=\u0026#34;currentColor\u0026#34;\u0026gt; \u0026lt;path d=\u0026#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z\u0026#34; /\u0026gt; \u0026lt;/svg\u0026gt; \u0026lt;/span\u0026gt; {{- end }} \u0026lt;/h3\u0026gt; \u0026lt;div class=\u0026#34;archive-meta\u0026#34;\u0026gt; {{- partial \u0026#34;post_meta.",
+  "keywords": [
+    "Hugo"
+  ],
+  "articleBody": "文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。\nHugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。\n以PaperMod主题为例\n\u003cdiv class=\"archive-posts\"\u003e {{- range .Pages }} {{- if not .Params.hidden }} {{- if eq .Kind \"page\" }} \u003cdiv class=\"archive-entry\"\u003e \u003ch3 class=\"archive-entry-title entry-hint-parent\"\u003e {{- .Title | markdownify }} {{- if .Draft }} \u003cspan class=\"entry-hint\" title=\"Draft\"\u003e \u003csvg xmlns=\"http://www.w3.org/2000/svg\" height=\"15\" viewBox=\"0 -960 960 960\" fill=\"currentColor\"\u003e \u003cpath d=\"M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z\" /\u003e \u003c/svg\u003e \u003c/span\u003e {{- end }} \u003c/h3\u003e \u003cdiv class=\"archive-meta\"\u003e {{- partial \"post_meta.html\" . -}} \u003c/div\u003e \u003ca class=\"entry-link\" aria-label=\"post link to {{ .Title | plainify }}\" href=\"{{ .Permalink }}\"\u003e\u003c/a\u003e \u003c/div\u003e {{- end }} {{- end }} {{- end }} \u003c/div\u003e \u003c/div\u003e Hugo对于非默认的章节参数都会存储在 .Params 下面，通过\n{{- if not .Params.hidden }} ... {{- end }} 可以隐藏 hidden = true 的文章，使其不显示在Archive中\n",
+  "wordCount" : "134",
+  "inLanguage": "en",
+  "datePublished": "2024-08-31T10:38:24+08:00",
+  "dateModified": "2024-08-31T10:38:24+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Dafu"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/blog/articles/sub_articles/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/blog/assets/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/blog/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/blog/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/blog/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/articles/">Articles</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Hugo隐藏部分文章
+    </h1>
+    <div class="post-meta"><span title='2024-08-31 10:38:24 +0800 CST'>August 31, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu&nbsp;|&nbsp;<a href="https://github.com/dafuzhuu/blog/tree/main/content/articles/sub_articles.md" rel="noopener noreferrer" target="_blank">Edit</a>
+
+</div>
+  </header> 
+
+  <div class="post-content"><p>文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。</p>
+<p>Hugo主文件夹中的 <code>layouts</code> 可以覆盖theme中的配置，因此可以将主题中 <code>layouts/_default/archives.html</code> 复制到主文件夹的 <code>layouts</code> 下，并进行修改。</p>
+<p>以PaperMod主题为例</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;archive-posts&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      {{- range .Pages }}
+</span></span><span class="line"><span class="cl">      {{- if not .Params.hidden }}  <span class="c">&lt;!-- 添加hidden逻辑 --&gt;</span>
+</span></span><span class="line"><span class="cl">      {{- if eq .Kind &#34;page&#34; }}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;archive-entry&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;archive-entry-title entry-hint-parent&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          {{- .Title | markdownify }}
+</span></span><span class="line"><span class="cl">          {{- if .Draft }}
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;entry-hint&#34;</span> <span class="na">title</span><span class="o">=</span><span class="s">&#34;Draft&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;15&#34;</span> <span class="na">viewBox</span><span class="o">=</span><span class="s">&#34;0 -960 960 960&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;currentColor&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">              <span class="p">&lt;</span><span class="nt">path</span>
+</span></span><span class="line"><span class="cl">                <span class="na">d</span><span class="o">=</span><span class="s">&#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&#34;</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          {{- end }}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;archive-meta&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">          {{- partial &#34;post_meta.html&#34; . -}}
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;entry-link&#34;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&#34;post link to {{ .Title | plainify }}&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;{{ .Permalink }}&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      {{- end }}
+</span></span><span class="line"><span class="cl">      {{- end }}
+</span></span><span class="line"><span class="cl">      {{- end }}  <span class="c">&lt;!-- 隐藏 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p>Hugo对于非默认的章节参数都会存储在 <code>.Params</code> 下面，通过</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- if not .Params.hidden }}
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">{{- end }}
+</span></span></code></pre></div><p>可以隐藏 <code>hidden = true</code> 的文章，使其不显示在Archive中</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/blog/tags/hugo/">Hugo</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/blog/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
