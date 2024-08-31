@@ -1,5 +1,5 @@
 +++
-title = 'Hugo隐藏部分文章'
+title = 'Hugo设置文章隐藏功能'
 date = 2024-08-31T10:38:24+08:00
 tags = ['Hugo']
 draft = false
@@ -49,3 +49,12 @@ Hugo对于非默认的章节参数都会存储在 `.Params` 下面，通过
 ```
 
 可以隐藏 `hidden = true` 的文章，使其不显示在Archive中
+
+```toml
++++
+title = '隐藏文章'
+date = 2024-08-31T10:38:24+08:00
+draft = false
+hidden = true
++++
+```

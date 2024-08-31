@@ -6,14 +6,31 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- 0.133.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Aug 2024 23:26:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 11:09:42 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用SSH密钥进行身份验证</title>
+      <link>http://localhost:1313/blog/articles/set_ssh/</link>
+      <pubDate>Sat, 31 Aug 2024 11:09:42 +0800</pubDate>
+      <guid>http://localhost:1313/blog/articles/set_ssh/</guid>
+      <description>SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证的一种加密方式。</description>
+    </item>
+    <item>
+      <title>Hugo设置文章隐藏功能</title>
+      <link>http://localhost:1313/blog/articles/sub_articles/</link>
+      <pubDate>Sat, 31 Aug 2024 10:38:24 +0800</pubDate>
+      <guid>http://localhost:1313/blog/articles/sub_articles/</guid>
+      <description>文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
+Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
+以PaperMod主题为例
+&amp;lt;div class=&amp;#34;archive-posts&amp;#34;&amp;gt; {{- range .Pages }} {{- if not .Params.hidden }} &amp;lt;!-- 添加hidden逻辑 --&amp;gt; {{- if eq .Kind &amp;#34;page&amp;#34; }} &amp;lt;div class=&amp;#34;archive-entry&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;archive-entry-title entry-hint-parent&amp;#34;&amp;gt; {{- .Title | markdownify }} {{- if .Draft }} &amp;lt;span class=&amp;#34;entry-hint&amp;#34; title=&amp;#34;Draft&amp;#34;&amp;gt; &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; height=&amp;#34;15&amp;#34; viewBox=&amp;#34;0 -960 960 960&amp;#34; fill=&amp;#34;currentColor&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;/span&amp;gt; {{- end }} &amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;archive-meta&amp;#34;&amp;gt; {{- partial &amp;#34;post_meta.</description>
+    </item>
     <item>
       <title>GRS</title>
       <link>http://localhost:1313/blog/chapters/grs/</link>
       <pubDate>Thu, 29 Aug 2024 23:26:10 +0800</pubDate>
       <guid>http://localhost:1313/blog/chapters/grs/</guid>
-      <description>Example content</description>
+      <description></description>
     </item>
     <item>
       <title>Coursera自学指南</title>

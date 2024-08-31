@@ -145,6 +145,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Hugo设置文章隐藏功能
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
+Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
+以PaperMod主题为例
+&lt;div class=&#34;archive-posts&#34;&gt; {{- range .Pages }} {{- if not .Params.hidden }} &lt;!-- 添加hidden逻辑 --&gt; {{- if eq .Kind &#34;page&#34; }} &lt;div class=&#34;archive-entry&#34;&gt; &lt;h3 class=&#34;archive-entry-title entry-hint-parent&#34;&gt; {{- .Title | markdownify }} {{- if .Draft }} &lt;span class=&#34;entry-hint&#34; title=&#34;Draft&#34;&gt; &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; height=&#34;15&#34; viewBox=&#34;0 -960 960 960&#34; fill=&#34;currentColor&#34;&gt; &lt;path d=&#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&#34; /&gt; &lt;/svg&gt; &lt;/span&gt; {{- end }} &lt;/h3&gt; &lt;div class=&#34;archive-meta&#34;&gt; {{- partial &#34;post_meta....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-08-31 10:38:24 +0800 CST'>August 31, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu</footer>
+  <a class="entry-link" aria-label="post link to Hugo设置文章隐藏功能" href="http://localhost:1313/blog/articles/sub_articles/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">15分钟用Hugo&#43;Github Pages搭建博客
     </h2>
   </header>

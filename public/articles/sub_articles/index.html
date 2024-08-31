@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Hugo隐藏部分文章 | Blog</title>
+<title>Hugo设置文章隐藏功能 | Blog</title>
 <meta name="keywords" content="Hugo">
 <meta name="description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
 Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
@@ -61,7 +61,7 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
 </noscript>
   
 
-<meta property="og:title" content="Hugo隐藏部分文章" />
+<meta property="og:title" content="Hugo设置文章隐藏功能" />
 <meta property="og:description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
 Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
 以PaperMod主题为例
@@ -72,7 +72,7 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
 <meta property="article:modified_time" content="2024-08-31T10:38:24+08:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo隐藏部分文章"/>
+<meta name="twitter:title" content="Hugo设置文章隐藏功能"/>
 <meta name="twitter:description" content="文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
 Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
 以PaperMod主题为例
@@ -93,7 +93,7 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Hugo隐藏部分文章",
+      "name": "Hugo设置文章隐藏功能",
       "item": "http://localhost:1313/blog/articles/sub_articles/"
     }
   ]
@@ -103,14 +103,14 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Hugo隐藏部分文章",
-  "name": "Hugo隐藏部分文章",
+  "headline": "Hugo设置文章隐藏功能",
+  "name": "Hugo设置文章隐藏功能",
   "description": "文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。\nHugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。\n以PaperMod主题为例\n\u0026lt;div class=\u0026#34;archive-posts\u0026#34;\u0026gt; {{- range .Pages }} {{- if not .Params.hidden }} \u0026lt;!-- 添加hidden逻辑 --\u0026gt; {{- if eq .Kind \u0026#34;page\u0026#34; }} \u0026lt;div class=\u0026#34;archive-entry\u0026#34;\u0026gt; \u0026lt;h3 class=\u0026#34;archive-entry-title entry-hint-parent\u0026#34;\u0026gt; {{- .Title | markdownify }} {{- if .Draft }} \u0026lt;span class=\u0026#34;entry-hint\u0026#34; title=\u0026#34;Draft\u0026#34;\u0026gt; \u0026lt;svg xmlns=\u0026#34;http://www.w3.org/2000/svg\u0026#34; height=\u0026#34;15\u0026#34; viewBox=\u0026#34;0 -960 960 960\u0026#34; fill=\u0026#34;currentColor\u0026#34;\u0026gt; \u0026lt;path d=\u0026#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z\u0026#34; /\u0026gt; \u0026lt;/svg\u0026gt; \u0026lt;/span\u0026gt; {{- end }} \u0026lt;/h3\u0026gt; \u0026lt;div class=\u0026#34;archive-meta\u0026#34;\u0026gt; {{- partial \u0026#34;post_meta.",
   "keywords": [
     "Hugo"
   ],
-  "articleBody": "文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。\nHugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。\n以PaperMod主题为例\n\u003cdiv class=\"archive-posts\"\u003e {{- range .Pages }} {{- if not .Params.hidden }} {{- if eq .Kind \"page\" }} \u003cdiv class=\"archive-entry\"\u003e \u003ch3 class=\"archive-entry-title entry-hint-parent\"\u003e {{- .Title | markdownify }} {{- if .Draft }} \u003cspan class=\"entry-hint\" title=\"Draft\"\u003e \u003csvg xmlns=\"http://www.w3.org/2000/svg\" height=\"15\" viewBox=\"0 -960 960 960\" fill=\"currentColor\"\u003e \u003cpath d=\"M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z\" /\u003e \u003c/svg\u003e \u003c/span\u003e {{- end }} \u003c/h3\u003e \u003cdiv class=\"archive-meta\"\u003e {{- partial \"post_meta.html\" . -}} \u003c/div\u003e \u003ca class=\"entry-link\" aria-label=\"post link to {{ .Title | plainify }}\" href=\"{{ .Permalink }}\"\u003e\u003c/a\u003e \u003c/div\u003e {{- end }} {{- end }} {{- end }} \u003c/div\u003e \u003c/div\u003e Hugo对于非默认的章节参数都会存储在 .Params 下面，通过\n{{- if not .Params.hidden }} ... {{- end }} 可以隐藏 hidden = true 的文章，使其不显示在Archive中\n",
-  "wordCount" : "134",
+  "articleBody": "文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。\nHugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。\n以PaperMod主题为例\n\u003cdiv class=\"archive-posts\"\u003e {{- range .Pages }} {{- if not .Params.hidden }} {{- if eq .Kind \"page\" }} \u003cdiv class=\"archive-entry\"\u003e \u003ch3 class=\"archive-entry-title entry-hint-parent\"\u003e {{- .Title | markdownify }} {{- if .Draft }} \u003cspan class=\"entry-hint\" title=\"Draft\"\u003e \u003csvg xmlns=\"http://www.w3.org/2000/svg\" height=\"15\" viewBox=\"0 -960 960 960\" fill=\"currentColor\"\u003e \u003cpath d=\"M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z\" /\u003e \u003c/svg\u003e \u003c/span\u003e {{- end }} \u003c/h3\u003e \u003cdiv class=\"archive-meta\"\u003e {{- partial \"post_meta.html\" . -}} \u003c/div\u003e \u003ca class=\"entry-link\" aria-label=\"post link to {{ .Title | plainify }}\" href=\"{{ .Permalink }}\"\u003e\u003c/a\u003e \u003c/div\u003e {{- end }} {{- end }} {{- end }} \u003c/div\u003e \u003c/div\u003e Hugo对于非默认的章节参数都会存储在 .Params 下面，通过\n{{- if not .Params.hidden }} ... {{- end }} 可以隐藏 hidden = true 的文章，使其不显示在Archive中\n+++ title = '隐藏文章' date = 2024-08-31T10:38:24+08:00 draft = false hidden = true +++ ",
+  "wordCount" : "148",
   "inLanguage": "en",
   "datePublished": "2024-08-31T10:38:24+08:00",
   "dateModified": "2024-08-31T10:38:24+08:00",
@@ -198,7 +198,7 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/blog/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/articles/">Articles</a></div>
     <h1 class="post-title entry-hint-parent">
-      Hugo隐藏部分文章
+      Hugo设置文章隐藏功能
     </h1>
     <div class="post-meta"><span title='2024-08-31 10:38:24 +0800 CST'>August 31, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Dafu&nbsp;|&nbsp;<a href="https://github.com/dafuzhuu/blog/tree/main/content/articles/sub_articles.md" rel="noopener noreferrer" target="_blank">Edit</a>
 
@@ -239,7 +239,13 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
 </span></span><span class="line"><span class="cl">    ...
 </span></span><span class="line"><span class="cl">{{- end }}
 </span></span></code></pre></div><p>可以隐藏 <code>hidden = true</code> 的文章，使其不显示在Archive中</p>
-
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="err">+++</span>
+</span></span><span class="line"><span class="cl"><span class="nx">title</span> <span class="p">=</span> <span class="s1">&#39;隐藏文章&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">date</span> <span class="p">=</span> <span class="ld">2024-08-31T10:38:24+08:00</span>
+</span></span><span class="line"><span class="cl"><span class="nx">draft</span> <span class="p">=</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="nx">hidden</span> <span class="p">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="err">+++</span>
+</span></span></code></pre></div>
 
   </div>
 
