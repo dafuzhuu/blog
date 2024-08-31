@@ -19,7 +19,7 @@ math = true
 R_{it}^e=\alpha_i+\beta_i^T\lambda_t+\epsilon_t, \quad t=1,2,\cdots,T
 $$`
 
-时序回归：首先固定`$i$`，以这只股票在不同时间上的数据为样本，做[OLS回归](/blog/chapters/OLS回归)，得到属于这只股票的`$\beta_i^T,\alpha_i,\epsilon_i$`。
+时序回归：首先固定`$i$`，以这只股票在不同时间上的数据为样本，做[OLS回归](/blog/chapters/ols回归)，得到属于这只股票的`$\beta_i^T,\alpha_i,\epsilon_i$`。
 
 ![时序回归](时序回归.png)
 
