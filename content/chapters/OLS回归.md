@@ -6,6 +6,43 @@ math = true
 hidden = true
 +++
 
+# OLS的假设
+
+1. **线性（Linearity）** 
+   回归模型假定因变量 \( Y \) 和自变量 \( X \) 之间的关系是线性的，即模型可以表示为：
+   \[
+   Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon
+   \]
+   其中 \( \epsilon \) 是误差项。
+
+2. **独立性（Independence）：** 
+   假定所有观测值的误差项 \( \epsilon \) 是相互独立的，即 \(\epsilon_i\) 与 \(\epsilon_j\)（当 \( i \neq j \) 时）是独立的。
+
+3. **同方差（Homoscedasticity）：** 
+   假定误差项的方差是常数，即所有观测值的误差项 \( \epsilon_i \) 具有相同的方差：
+   \[
+   \text{Var}(\epsilon_i) = \sigma^2
+   \]
+   对所有 \( i \)。
+
+4. **服从正态分布（Normality）：** 
+   假定误差项 \( \epsilon \) 服从正态分布，即：
+   \[
+   \epsilon \sim N(0, \sigma^2)
+   \]
+   该假设主要用于推断检验，例如 t 检验和 F 检验。
+
+5. **无多重共线性（No Multicollinearity）：** 
+   假定自变量之间没有完全的线性关系，即自变量矩阵 \( X \) 的列向量是线性独立的。
+
+6. **误差项的期望为零（Zero Mean）：**
+   假定误差项的期望值为零，即：
+   \[
+   \mathbb{E}[\epsilon] = 0
+   \]
+
+
+# OLS推导
 OLS回归的步骤如下
 
 $$
