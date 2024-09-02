@@ -9,10 +9,10 @@ hidden = true
 # OLS的假设
 
 1. **线性（Linearity）** 
-   回归模型假定因变量 \( Y \) 和自变量 \( X \) 之间的关系是线性的，即模型可以表示为：
-   \[
+   回归模型假定因变量 `\( Y \)` 和自变量 `\( X \)` 之间的关系是线性的，即模型可以表示为：
+   `\[
    Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon
-   \]
+   \]`
    其中 \( \epsilon \) 是误差项。
 
 2. **独立性（Independence）：** 

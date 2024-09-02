@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Blog</title>
     <link>http://localhost:1313/blog/articles/</link>
     <description>Recent content in Articles on Blog</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Aug 2024 11:09:42 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/articles/index.xml" rel="self" type="application/rss+xml" />
@@ -13,32 +13,14 @@
       <link>http://localhost:1313/blog/articles/set_ssh/</link>
       <pubDate>Sat, 31 Aug 2024 11:09:42 +0800</pubDate>
       <guid>http://localhost:1313/blog/articles/set_ssh/</guid>
-      <description>SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证的一种加密方式。
-SSH原理 非对称加密：SSH公钥认证使用非对称加密技术，这种技术涉及一对密钥：公钥和私钥。
-公钥（Public Key）：可以公开发布，任何人都可以获取。 私钥（Private Key）：必须严格保密，只能由密钥的拥有者持有。 加密与解密：
-加密：公钥用于加密数据。由于公钥是公开的，任何人都可以使用它加密信息。 解密：只有对应的私钥可以解密由公钥加密的信息。这确保了只有密钥的拥有者（持有私钥的人）才能读取加密内容。 身份验证过程：
-生成密钥对：用户首先在本地设备上生成一对公钥和私钥。 上传公钥：用户将公钥上传到需要访问的远程服务器（如GitHub、远程Linux服务器）。 私钥保密：私钥保存在用户的本地设备上，不与任何人共享。 连接与认证：
-当用户尝试通过SSH连接到远程服务器时，服务器会生成一个随机数并使用用户的公钥对其加密，然后将加密后的数据发送给用户。 用户的SSH客户端使用本地的私钥解密服务器发送的加密数据。 如果解密成功，用户客户端将解密结果发回给服务器。 服务器验证解密结果是否正确，以确认用户持有相应的私钥。如果正确，身份验证通过。 确保安全：
-安全性：由于私钥从不在网络上传输，攻击者无法通过截获通信数据来获取私钥。 防篡改：即使攻击者获取了公钥，无法伪装成合法用户，因为他们没有对应的私钥。 优势：
-高安全性：相比传统的用户名/密码认证，SSH公钥认证更加安全，因为私钥不会在网络上传输，并且密钥对是独一无二的。 无密码登录：SSH公钥认证允许无密码的自动化登录，便于脚本、自动化工具和日常运维。 管理便捷：可以为每个设备或用户设置不同的公钥，并且可以随时管理和撤销。 如何设置SSH 生成SSH密钥 打开终端并输入以下命令来生成新的SSH密钥：
-ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; 当系统提示时，按回车键以接受默认的文件路径（通常是 ~/.ssh/id_ed25519）。
-接着，系统会要求你设置一个密码短语。你可以选择设置，也可以直接按回车跳过。
-添加SSH密钥到SSH代理 启动SSH代理：
-eval &amp;#34;$(ssh-agent -s)&amp;#34; 将生成的SSH密钥添加到SSH代理中：
-ssh-add ~/.ssh/id_ed25519 将SSH密钥添加到GitHub 查看你的SSH公钥：
-cat ~/.ssh/id_ed25519.pub 然后复制输出的内容。 SSH公钥的格式通常是一个单行的文本字符串，包含了三部分内容：加密类型、加密公钥数据和注释（通常是你的邮箱地址）。以下是一个典型的SSH公钥格式示例：
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG8sVpP8h65X8+8Km6BtJQG9d8gY6J7sZ+TpJQeV9XZT your_email@example.com 登录GitHub，前往 Settings -&amp;gt; SSH and GPG keys -&amp;gt; New SSH key。
-在 &amp;ldquo;Title&amp;rdquo; 中输入一个名称（如 &amp;ldquo;My Computer&amp;rdquo;），并将复制的SSH公钥粘贴到 &amp;ldquo;Key&amp;rdquo; 字段中，最后点击 Add SSH key。</description>
+      <description>SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证的一种加密方式。&#xA;SSH原理 非对称加密：SSH公钥认证使用非对称加密技术，这种技术涉及一对密钥：公钥和私钥。&#xA;公钥（Public Key）：可以公开发布，任何人都可以获取。 私钥（Private Key）：必须严格保密，只能由密钥的拥有者持有。 加密与解密：&#xA;加密：公钥用于加密数据。由于公钥是公开的，任何人都可以使用它加密信息。 解密：只有对应的私钥可以解密由公钥加密的信息。这确保了只有密钥的拥有者（持有私钥的人）才能读取加密内容。 身份验证过程：&#xA;生成密钥对：用户首先在本地设备上生成一对公钥和私钥。 上传公钥：用户将公钥上传到需要访问的远程服务器（如GitHub、远程Linux服务器）。 私钥保密：私钥保存在用户的本地设备上，不与任何人共享。 连接与认证：&#xA;当用户尝试通过SSH连接到远程服务器时，服务器会生成一个随机数并使用用户的公钥对其加密，然后将加密后的数据发送给用户。 用户的SSH客户端使用本地的私钥解密服务器发送的加密数据。 如果解密成功，用户客户端将解密结果发回给服务器。 服务器验证解密结果是否正确，以确认用户持有相应的私钥。如果正确，身份验证通过。 确保安全：&#xA;安全性：由于私钥从不在网络上传输，攻击者无法通过截获通信数据来获取私钥。 防篡改：即使攻击者获取了公钥，无法伪装成合法用户，因为他们没有对应的私钥。 优势：&#xA;高安全性：相比传统的用户名/密码认证，SSH公钥认证更加安全，因为私钥不会在网络上传输，并且密钥对是独一无二的。 无密码登录：SSH公钥认证允许无密码的自动化登录，便于脚本、自动化工具和日常运维。 管理便捷：可以为每个设备或用户设置不同的公钥，并且可以随时管理和撤销。 如何设置SSH 生成SSH密钥 打开终端并输入以下命令来生成新的SSH密钥：&#xA;ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; 当系统提示时，按回车键以接受默认的文件路径（通常是 ~/.ssh/id_ed25519）。&#xA;接着，系统会要求你设置一个密码短语。你可以选择设置，也可以直接按回车跳过。&#xA;添加SSH密钥到SSH代理 启动SSH代理：&#xA;eval &amp;#34;$(ssh-agent -s)&amp;#34; 将生成的SSH密钥添加到SSH代理中：&#xA;ssh-add ~/.ssh/id_ed25519 将SSH密钥添加到GitHub 查看你的SSH公钥：&#xA;cat ~/.ssh/id_ed25519.pub 然后复制输出的内容。 SSH公钥的格式通常是一个单行的文本字符串，包含了三部分内容：加密类型、加密公钥数据和注释（通常是你的邮箱地址）。以下是一个典型的SSH公钥格式示例：&#xA;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG8sVpP8h65X8+8Km6BtJQG9d8gY6J7sZ+TpJQeV9XZT your_email@example.com 登录GitHub，前往 Settings -&amp;gt; SSH and GPG keys -&amp;gt; New SSH key。&#xA;在 &amp;ldquo;Title&amp;rdquo; 中输入一个名称（如 &amp;ldquo;My Computer&amp;rdquo;），并将复制的SSH公钥粘贴到 &amp;ldquo;Key&amp;rdquo; 字段中，最后点击 Add SSH key。</description>
     </item>
     <item>
       <title>Hugo设置文章隐藏功能</title>
       <link>http://localhost:1313/blog/articles/sub_articles/</link>
       <pubDate>Sat, 31 Aug 2024 10:38:24 +0800</pubDate>
       <guid>http://localhost:1313/blog/articles/sub_articles/</guid>
-      <description>文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。
-Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。
-以PaperMod主题为例
-&amp;lt;div class=&amp;#34;archive-posts&amp;#34;&amp;gt; {{- range .Pages }} {{- if not .Params.hidden }} &amp;lt;!-- 添加hidden逻辑 --&amp;gt; {{- if eq .Kind &amp;#34;page&amp;#34; }} &amp;lt;div class=&amp;#34;archive-entry&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;archive-entry-title entry-hint-parent&amp;#34;&amp;gt; {{- .Title | markdownify }} {{- if .Draft }} &amp;lt;span class=&amp;#34;entry-hint&amp;#34; title=&amp;#34;Draft&amp;#34;&amp;gt; &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; height=&amp;#34;15&amp;#34; viewBox=&amp;#34;0 -960 960 960&amp;#34; fill=&amp;#34;currentColor&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;/span&amp;gt; {{- end }} &amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;archive-meta&amp;#34;&amp;gt; {{- partial &amp;#34;post_meta.</description>
+      <description>文章分为两种，一种为主干，另一种是分支。好的博文会将主干写的清晰简洁，而技术细节会放在分支里。在Hugo中，无论是主干还是分支都会显示在Archive中，这是我们不希望看见的。我们希望隐藏分支，在Archive中只看到主干文章，但仍能通过url访问到分支。&#xA;Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将主题中 layouts/_default/archives.html 复制到主文件夹的 layouts 下，并进行修改。&#xA;以PaperMod主题为例&#xA;&amp;lt;div class=&amp;#34;archive-posts&amp;#34;&amp;gt; {{- range .Pages }} {{- if not .Params.hidden }} &amp;lt;!-- 添加hidden逻辑 --&amp;gt; {{- if eq .Kind &amp;#34;page&amp;#34; }} &amp;lt;div class=&amp;#34;archive-entry&amp;#34;&amp;gt; &amp;lt;h3 class=&amp;#34;archive-entry-title entry-hint-parent&amp;#34;&amp;gt; {{- .Title | markdownify }} {{- if .Draft }} &amp;lt;span class=&amp;#34;entry-hint&amp;#34; title=&amp;#34;Draft&amp;#34;&amp;gt; &amp;lt;svg xmlns=&amp;#34;http://www.w3.org/2000/svg&amp;#34; height=&amp;#34;15&amp;#34; viewBox=&amp;#34;0 -960 960 960&amp;#34; fill=&amp;#34;currentColor&amp;#34;&amp;gt; &amp;lt;path d=&amp;#34;M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z&amp;#34; /&amp;gt; &amp;lt;/svg&amp;gt; &amp;lt;/span&amp;gt; {{- end }} &amp;lt;/h3&amp;gt; &amp;lt;div class=&amp;#34;archive-meta&amp;#34;&amp;gt; {{- partial &amp;#34;post_meta.</description>
     </item>
     <item>
       <title>Coursera自学指南</title>
@@ -52,7 +34,7 @@ Hugo主文件夹中的 layouts 可以覆盖theme中的配置，因此可以将�
       <link>http://localhost:1313/blog/articles/toefl%E5%88%B7%E9%A2%98/</link>
       <pubDate>Sun, 25 Aug 2024 00:51:34 +0800</pubDate>
       <guid>http://localhost:1313/blog/articles/toefl%E5%88%B7%E9%A2%98/</guid>
-      <description>积累TOEFL刷题后精读的收获</description>
+      <description>在刷题的过程中，积累单词、句式、语法，在做阅读的时候为写作整理素材，在做听力的时候为口语准备语料，这样才能融会贯通，而不是盲人摸象。&#xA;生词 Word Meaning onwards adv. 从&amp;hellip;起 excavate v. 挖掘 coinage n. 创造新词的动作 portmanteau term n. 合成词，portmanteau 综合的 hoof/hooves n. 蹄/蹄子（复数） rear v. 抚养，养育 padded adj. 带衬垫的 pugnosed adj. 鼻子扁平的 elaborate adj. 复杂的 , v. 详述 succulent adj. 多汁的 grind v. 磨碎 abrasive adj./n. 研磨的 fusion n. 融合 subsistence n. 维持生计 carp n. 鲤鱼 scoop v. 舀 porcelains n. 瓷器 fairs n. 集市 sheer adj. 纯粹的 insulate v. 隔绝 reptile n.</description>
     </item>
   </channel>
 </rss>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapters on Blog</title>
     <link>http://localhost:1313/blog/chapters/</link>
     <description>Recent content in Chapters on Blog</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 31 Aug 2024 12:09:29 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/chapters/index.xml" rel="self" type="application/rss+xml" />
@@ -13,11 +13,7 @@
       <link>http://localhost:1313/blog/chapters/ols%E5%9B%9E%E5%BD%92/</link>
       <pubDate>Sat, 31 Aug 2024 12:09:29 +0800</pubDate>
       <guid>http://localhost:1313/blog/chapters/ols%E5%9B%9E%E5%BD%92/</guid>
-      <description>OLS回归的步骤如下
-$$ \mathbf{R}_i = \mathbf{X}_i \mathbf{b}_i + \boldsymbol{\epsilon}_i $$ 其中
-$$\mathbf{R}_i = \begin{pmatrix} R_{i1}^e \\ R_{i2}^e \\ \vdots \\ R_{iT}^e\\ \end{pmatrix}_{T\times 1}, \mathbf{X}_i = \begin{pmatrix} 1 &amp;amp; \lambda_1^T \\ 1 &amp;amp; \lambda_2^T \\ \vdots &amp;amp; \vdots \\ 1 &amp;amp; \lambda_T^T \end{pmatrix}_{T \times (k+1)}, \mathbf{b}_i = \begin{pmatrix} \alpha_i \\ \beta_i \end{pmatrix}_{(k+1) \times 1}, \boldsymbol{\epsilon}_i = \begin{pmatrix} \epsilon_{i1} \\ \epsilon_{i2} \\ \vdots \\ \epsilon_{iT} \end{pmatrix}_{T\times 1} $$
-我们希望通过最小化误差平方和来估计 $\mathbf{b}_i$，即最小化以下目标函数：
-$$ S(\mathbf{b}_i) = \sum_{t=1}^T \epsilon_{it}^2 = \boldsymbol{\epsilon}_i^T \boldsymbol{\epsilon}_i $$</description>
+      <description>OLS的假设 线性（Linearity） 回归模型假定因变量 ( Y ) 和自变量 ( X ) 之间的关系是线性的，即模型可以表示为： [ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon ] 其中 ( \epsilon ) 是误差项。&#xA;独立性（Independence）： 假定所有观测值的误差项 ( \epsilon ) 是相互独立的，即 (\epsilon_i) 与 (\epsilon_j)（当 ( i \neq j ) 时）是独立的。&#xA;同方差（Homoscedasticity）： 假定误差项的方差是常数，即所有观测值的误差项 ( \epsilon_i ) 具有相同的方差： [ \text{Var}(\epsilon_i) = \sigma^2 ] 对所有 ( i )。&#xA;服从正态分布（Normality）： 假定误差项 ( \epsilon ) 服从正态分布，即： [ \epsilon \sim N(0, \sigma^2) ] 该假设主要用于推断检验，例如 t 检验和 F 检验。</description>
     </item>
     <item>
       <title>GRS</title>

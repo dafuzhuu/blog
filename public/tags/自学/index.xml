@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>自学 on Blog</title>
     <link>http://localhost:1313/blog/tags/%E8%87%AA%E5%AD%A6/</link>
     <description>Recent content in 自学 on Blog</description>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 28 Aug 2024 21:45:01 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/tags/%E8%87%AA%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
@@ -20,7 +20,7 @@
       <link>http://localhost:1313/blog/posts/factor_invest/</link>
       <pubDate>Wed, 28 Aug 2024 00:25:16 +0800</pubDate>
       <guid>http://localhost:1313/blog/posts/factor_invest/</guid>
-      <description>每天读一点，不着急</description>
+      <description>原书pdf: 《因子投资 方法与实践》&#xA;回归检验 时间序列回归 对某只股票 $i$&#xA;$$&#xD;R_{it}^e=\alpha_i+\beta_i^T\lambda_t+\epsilon_t, \quad t=1,2,\cdots,T&#xD;$$&#xA;时序回归：首先固定$i$，以这只股票在不同时间上的数据为样本，做OLS回归，得到属于这只股票的$\beta_i^T,\alpha_i,\epsilon_i$。&#xA;这是一张散点图，横轴是用时序回归估计出来的 $\hat{\beta}_i$ ，纵轴是通过公式 $E_t[R_{it}^e]=\hat{\alpha}_i+\hat{\beta}_iE_t[\lambda_t]$ 估计出来的预期收益率。因此，这张图不是最小化 $\alpha_i$ 的结果。&#xA;既然我们已经估计出 $\alpha_i$，下面要检验其是否联合为零。常用的方法是GRS检验。</description>
     </item>
   </channel>
 </rss>
