@@ -3,7 +3,7 @@ title = 'TOEFL Reading'
 date = 2024-08-28T23:42:22+08:00
 description = 'Vince托福阅读课笔记'
 tags = ['TOEFL']
-draft = true
+draft = false
 +++
 
 # 如何备考
@@ -32,6 +32,7 @@ draft = true
 # 总结题怎么做
 
 1. 提示词：题干下面的一行字，可以帮助确定文章重点
-2. 排除
+2. 排除，容易挖坑的地方：
+   1. 因果关系 so, because
 
 
