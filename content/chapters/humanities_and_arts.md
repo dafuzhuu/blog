@@ -1,5 +1,5 @@
 +++
-title = 'Humanities_and_arts'
+title = 'Humanities & arts'
 date = 2024-09-02T22:40:45+08:00
 draft = false
 hidden = true

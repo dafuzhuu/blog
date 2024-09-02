@@ -1,5 +1,5 @@
 +++
-title = 'Social_science'
+title = 'Social science'
 date = 2024-09-02T22:40:32+08:00
 draft = false
 hidden = true
