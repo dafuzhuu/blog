@@ -73,3 +73,25 @@ draft = false
 前面在讲 volcanic ，我们知道volcanic是错的，然后有个关键的转折（completely different），这说明转折后的内容是对的。至于 flap, flung, overturned, 这些细节，好像没那么重要。
 
 所以遇到复杂的表述不要扎进去，而是跳出来把它当成一个整体（像矩阵分析），然后判断态度（正/反），类似GRE当成逻辑题来做；转折词就是重要的逻辑信号。
+
+### 小结题举例
+
+Through much of the twentieth century, scientists disagreed on how lunar craters were formed.
+
+A.Over the years, the prevailing belief that lunar craters were formed by volcanic activity was challenged by proponents of the meteor impact theory of crater formation.
+
+B.The most widely accepted explanation of lunar crater formation was the theory proposed in 1893 by the geologist G. K. Gilbert.
+
+C.Because G. K. Gilbert's research showed that the average impact angle of meteors was 45°, he abandoned his own theory of lunar crater formation.
+
+D.The research of D. M. Barringer and Gene Shoemaker provided solid evidence supporting impact formation and was a major factor in discrediting the volcanic creation theory.
+
+E.Volcanic craters are formed by the explosion of compressed volcanic gases, which blasts out large volumes of fragments.
+
+F.The application of field studies of Meteor Crater to the formation of the Moon’s Copericus Crater effectively ended the centuries-old debate over the origin of lunar craters.
+
+小结题方法：排除法
+
+1. 关键词（将没有关键词的排除，这些都是细节而不是主旨）
+2. 排除事实错误的选项
+3. 重读一遍
