@@ -5,7 +5,7 @@ draft = false
 hidden = true
 +++
 
-## TPO75 The Palaces of Minoan Crete
+## TPO 75 The Palaces of Minoan Crete
 
 > From the early twentieth-century work of archaeologist Arthur Evans onwards, the ingrained and embedded religious nature of the palaces has been accepted, as has the fact that "palace" is inadequate shorthand for the buildings' complexities.
 
