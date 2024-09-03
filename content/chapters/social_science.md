@@ -5,6 +5,13 @@ draft = false
 hidden = true
 +++
 
+## 专业词汇
+
+| Word             | Meaning                 |
+|------------------|-------------------------|
+| posterity | n. 后代 |
+| genealogical | adj. 系谱学的；genealogy: 系谱学 |
+
 ## TPO 74 The Commercialization of Pearl River Agriculture
 
 这篇特别多坑

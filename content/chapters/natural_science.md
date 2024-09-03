@@ -1,5 +1,75 @@
 +++
 title = 'Natural science'
 date = 2024-09-02T22:40:24+08:00
-draft = true
+draft = false
 +++
+
+
+## 专业词汇
+
+| Word             | Meaning                 |
+|------------------|-------------------------|
+| reptile          | n. 爬行动物             |
+| carp             | n. 鲤鱼                 |
+| mutant           | n. 突变体                |
+| algae            | n. 藻类                 |
+| algicide         | n. 除藻剂 |
+| cytoplasm        | n. 细胞质                |
+| chloroplasts     | n. 叶绿体                |
+| pigment          | n. 色素                 |
+| strata           | n. 地层                   |
+
+
+## TPO 72 Invading Algae
+
+### 结构
+
+1. 由来：C. taxifolia
+2. 这种生物的特点
+   - 冷水中生存
+   - 各种地带都 grow equally well
+   - 大于 18°C 时生长超快
+   - asexual
+3. 对其他生物的影响
+   - 遮住阳光
+   - 生物 diversity `$\downarrow$`
+   - 不可食用，有毒
+4. 防治方法
+   - 用手捞
+   - 用 black plastic tarp 覆盖
+   - 用 algicide 和 salt 化学解决
+   - 但局限在小范围情况
+5. 生物防治
+   - sea slug
+   - 可能带来新的危机？
+
+### 句子分析
+
+> Instead of dying in the cold winter waters of the Mediterranean Sea as the tropical variety of C. taxifolia does, the mutant variety can withstand several months at temperatures that range between 10° and 13° C.
+
+在这段话中，“tropical variety”和“mutant variety”中的“variety”指的是同一物种内的不同变种或类型
+
+1. **Tropical variety（热带变种）**：指的是热带地区原生的C. taxifolia的变种。这种变种通常只能在较暖的水温中生存，在较冷的环境中（如地中海的冬季）会死亡。
+
+2. **Mutant variety（突变变种）**：指的是由热带变种突变而来的C. taxifolia变种。这种变种具有不同的特性，能够在较低的温度（10°到13°C）下存活几个月，从而适应了地中海较冷的环境。
+
+## TPO 72 The Impact Origin of Lunar Craters
+
+### 结构
+
+1. volcanic crater是错的，应该是impact
+2. Gilbert第一次被反驳，角度问题
+3. Öpik为Gilbert辩护，提出速度的因素
+4. Barringer提供证据
+5. 第一个证据：完整的碎片
+6. 第二个证据：inverted flap
+7. 第三个证据：effect（玻璃，矿石）
+8. 最后大多数人都接受了impact crater的观点
+
+### 段落分析
+
+> In addition, most volcanic craters are formed by sustained compression of volcanic gases which blast out large volumes of fragments. Volcanic ejecta form simple aprons around craters, the first-erupted materials at the bottom and the last at the top. Shoemakers field studies showed that a **completely different situation** exists at Meteor Crater, where the ejecta form an inverted flap flung out and overturned in a single blast. Thus, a drill hole through the ejecta on the rim would pass through layers of the same material twice. In Shoemaker's words, the strata appeared to "have been peeled back from the area of the crater, somewhat like petals of a flower blossoming. Similar structures are observed in laboratory experiments involving hypervelocity impacts.
+
+前面在讲 volcanic ，我们知道volcanic是错的，然后有个关键的转折（completely different），这说明转折后的内容是对的。至于 flap, flung, overturned, 这些细节，好像没那么重要。
+
+所以遇到复杂的表述不要扎进去，而是跳出来把它当成一个整体（像矩阵分析），然后判断态度（正/反），类似GRE当成逻辑题来做；转折词就是重要的逻辑信号。
