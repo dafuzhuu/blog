@@ -32,6 +32,7 @@ tags = ['网课', '自学']
 - [Mathematical Thinking in Computer Science](https://www.coursera.org/learn/what-is-a-proof?specialization=discrete-mathematics)
 - [Number Theory and Cryptography](https://www.coursera.org/learn/number-theory-cryptography?specialization=discrete-mathematics)
 - [Delivery Problem](https://www.coursera.org/learn/delivery-problem?specialization=discrete-mathematics)
+- [Quantitative Model Checking](https://www.coursera.org/learn/quantitative-model-checking)
 
 # Computer Science
 
