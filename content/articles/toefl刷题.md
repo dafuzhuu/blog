@@ -44,6 +44,10 @@ draft = false
 | tarp | n. 帆布 |
 | ejecta           | n. 喷出物                |
 | apron            | n. 围裙           |
+| impound | v. 关起来 |
+| contend with | v. 应对，处理 |
+| guise | n. 伪装 |
+| come to light on | 被发现 |
 
 # 阅读题材
 

@@ -19,6 +19,9 @@ hidden = true
 | chloroplasts     | n. 叶绿体                |
 | pigment          | n. 色素                 |
 | strata           | n. 地层                   |
+| dam             | n.v. （建）大坝 |
+| reservoir   | n. 水库 |
+
 
 
 ## TPO 72 Invading Algae
@@ -96,3 +99,30 @@ F.The application of field studies of Meteor Crater to the formation of the Moon
 1. 关键词（将没有关键词的排除，这些都是细节而不是主旨）
 2. 排除事实错误的选项
 3. 重读一遍
+
+## TPO 71 Electrical Energy from the Ocean
+
+### 结构
+
+1. 海洋资源丰富
+2. 有几种利用方法
+3. 第一种：temperature differences with depth
+4. 第二种：currents
+5. 第三种：waves
+6. 第四种：tides
+
+### 错题分析
+
+> Perhaps tidal power is the most promising form of ocean energy. In fact, it has been **used for centuries in some coastal areas to run mills**, but its use at present for electrical generation is limited. Most coastal areas experience a twice-daily rise and fall of tides, but only a few areas are suitable for exploiting this energy source. One limitation is that the tidal range must be at least five meters, and there must also be a coastal region where water can be stored following high tide.
+
+Why does the author mention the fact that tides have been "used for centuries in some coastal areas to run mills"?
+
+A.To compare how energy from the ocean was gotten in the past with how it is currently gotten
+
+B.To emphasize the difficulty of providing for the energy needs of the coastal areas
+
+C.To explain why some coastal areas had more energy available in the past than inland areas typically did
+
+D.To support the idea that the tides are probably the most easily converted source of energy from the sea
+
+注意 **In fact** 是个信号词，后面在解释前面，所以这句话解释的是 tidal power is the most promising form of ocean energy.

@@ -54,6 +54,8 @@ SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证�
 
 ## 添加SSH密钥到SSH代理
 
+### macOS
+
 1. 启动SSH代理：
    ```bash
    eval "$(ssh-agent -s)"
@@ -62,6 +64,38 @@ SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证�
 2. 将生成的SSH密钥添加到SSH代理中：
    ```bash
    ssh-add ~/.ssh/id_ed25519
+   ```
+
+### Windows
+
+1. 启动SSH代理：
+   
+   在菜单栏右击 Powershell，以管理员身份打开。运行
+
+   ```powershell
+   Set-Service -Name ssh-agent -StartupType Manual
+   Start-Service ssh-agent
+   ```
+
+   为确认SSH agent已经在运行
+
+   ```powershell
+   Get-Service ssh-agent
+   ```
+
+   如果在运行会输出
+
+   ```powershell
+   Status   Name               DisplayName
+   ------   ----               -----------
+   Running  ssh-agent          OpenSSH Authentication Agent
+
+   ```
+
+2. 将生成的SSH密钥添加到SSH代理中
+
+   ```powershell
+   ssh-add C:\path\to\your\private\key
    ```
 
 ## 将SSH密钥添加到GitHub
