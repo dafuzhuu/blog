@@ -1,5 +1,5 @@
 +++
-title = 'Application'
+title = '申请培训课'
 date = 2024-09-07T09:08:03+08:00
 draft = false
 +++
