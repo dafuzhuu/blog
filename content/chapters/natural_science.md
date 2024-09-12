@@ -21,6 +21,8 @@ hidden = true
 | strata           | n. 地层                   |
 | dam             | n.v. （建）大坝 |
 | reservoir   | n. 水库 |
+| subside | v. 沉陷，平息 |
+| basin | n. 盆地，海盆 |
 
 
 

@@ -14,7 +14,11 @@ hidden = true
 | ware / pottery  | n. 陶器 |
 | porcelain | n. 瓷器 |
 | ceramic | adj.n. 陶器瓷器(anything to do with clay) |
-
+| silt | n. 淤泥 |
+| dike | n. 堤坝 |
+| inundation | n. 洪水 |
+| predicament | n. 困境 |
+| erect | v. 搭建 |
 
 ## TPO 75 The Palaces of Minoan Crete
 
@@ -49,3 +53,9 @@ hidden = true
 这个选项为什么错？
 
 先不管是不是 extensive，主体没有谈及 palace，就是离题，可以果断排除
+
+## TPO 70 The Development of Chinese Dynasties
+
+> It is generally understood that the river running through a vast area where the fine and porous soil accounts for the large silt content in its current has a constant tendency to clog its own course and cause dikes to break and enormous inundations to occur.
+
+这里 fine and porous 是细密、多孔的意思，导致水流中的淤泥含量较高，这种河流往往会不断淤积，堵塞河道，从而导致堤坝决口和大规模的洪涝灾害

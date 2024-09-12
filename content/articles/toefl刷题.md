@@ -48,6 +48,11 @@ draft = false
 | contend with | v. 应对，处理 |
 | guise | n. 伪装 |
 | come to light on | 被发现 |
+| porous | adj. 多孔渗透的 |
+| convene | v. 召集，召开 |
+| pledge | n.v. 发誓，誓言 |
+| adjacent | adj. 邻近的 |
+| vague | adj. 不清楚的 |
 
 # 阅读题材
 
@@ -66,11 +71,3 @@ draft = false
 4. 全文结构题（1道）
 5. 插入句子题（1道）
 6. 小结题（1道）
-
-**小结题**方法：[排除法](https://toefl.xdf.cn/202306/13340487.html)
-
-时间紧迫，基于选项而不是基于题干做题
-
-1. 关键词（将没有关键词的排除，这些都是细节而不是主旨）
-2. 排除事实错误的选项
-3. 重读一遍
