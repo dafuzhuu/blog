@@ -3,7 +3,7 @@ title = 'TOEFL刷题积累'
 date = 2024-08-25T00:51:34+08:00
 description = '积累TOEFL刷题后精读的收获'
 tags = ["TOEFL"]
-draft = false
+draft = true
 +++
 
 在刷题的过程中，积累单词、句式、语法，在做阅读的时候为写作整理素材，在做听力的时候为口语准备语料，这样才能融会贯通，而不是盲人摸象。
