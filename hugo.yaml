@@ -77,7 +77,7 @@ params:
 
   editPost:
     URL: "https://github.com/dafuzhuu/blog/tree/main/content"
-    Text: "Edit" # edit text
+    Text: "See raw" # edit text
     appendFilePath: true # to append file path to Edit link
 
 
