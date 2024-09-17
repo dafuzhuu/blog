@@ -29,8 +29,6 @@ draft = false
 
 接着在markdown文件中用如下代码调用shortcode
 
-```
-{{< video src="lec3/3. The goals of statistics.mp4" type="mp4">}}
-```
+`{{< video src="lec3/3. The goals of statistics.mp4" type="mp4">}}`
 
 这样，视频就能在Hugo页面中播放了。
