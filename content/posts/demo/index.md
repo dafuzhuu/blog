@@ -27,7 +27,7 @@ git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git t
 
 随后用git导入主题PaperMod，这两句足够完成配置，更多信息见[Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod)
 
-如果用 macOS，可以直接在shell中编辑 hugo.yaml 文件。Windows建议打开编辑比较方便。
+如果用 macOS，可以直接在shell中编辑 hugo.yaml 文件。Windows建议打开文件编辑比较方便。
 
 ```shell
 vim hugo.yaml
