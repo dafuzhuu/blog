@@ -15,3 +15,7 @@ Progress: 0/7
 
 - [Fundamentals of Statistics](/MITx-18.6501x)
 - [Probability](/MITx-6.431x)
+
+**Other MIT courses**
+
+- [Matrix Methods in Data Analysis, Signal Processing, and Machine Learning](/MIT-18.065)
