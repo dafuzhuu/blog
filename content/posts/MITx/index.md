@@ -11,4 +11,7 @@ Start Date: September 15, 2024
 
 Progress: 0/7
 
-[Fundamentals of Statistics](/MITx-18.6501x/)
+**Course list**
+
+- [Fundamentals of Statistics](/MITx-18.6501x)
+- [Probability](/MITx-6.431x)
