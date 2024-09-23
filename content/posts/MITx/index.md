@@ -14,7 +14,7 @@ Progress: 0/7
 **Course list**
 
 - [Fundamentals of Statistics](/MITx-18.6501x)
-- [Probability](/MITx-6.431x)
+- [Introduction to Probability](/MITx-6.431x)
 
 **Other MIT courses**
 
