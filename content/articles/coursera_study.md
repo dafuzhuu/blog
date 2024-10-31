@@ -84,6 +84,7 @@ tags = ['网课', '自学']
 - [Advanced Topics in Derivative Pricing](https://www.coursera.org/learn/financial-engineering-advancedtopics?specialization=financialengineering)
 - [Computational Methods in Pricing and Model Calibration](https://www.coursera.org/learn/financial-engineering-computationalmethods?specialization=financialengineering)
 - [机器学习与量化投资（复旦）](https://www.bilibili.com/video/BV1fv411r7z1/?spm_id_from=333.337.search-card.all.click)
+- [Reinforcement Learning in Finance](https://www.coursera.org/learn/reinforcement-learning-in-finance)
 
 # Elective Courses
 
