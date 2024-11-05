@@ -2,7 +2,7 @@
 title = '使用SSH密钥进行身份验证'
 date = 2024-08-31T11:09:42+08:00
 draft = false
-tags = ['Git']
+tags = ['技术']
 author = "GPT"
 +++
 

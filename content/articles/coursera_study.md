@@ -2,7 +2,7 @@
 title = 'Coursera自学指南'
 date = 2024-08-28T21:45:01+08:00
 draft = false
-tags = ['网课', '自学']
+tags = ['自学']
 +++
 
 # Math

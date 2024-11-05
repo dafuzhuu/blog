@@ -1,7 +1,7 @@
 +++
 title = '基于JoinQuant的因子回测框架'
 date = 2024-08-25T12:07:27+08:00
-tags = ['因子']
+tags = ['量化']
 draft = false
 math = true
 +++

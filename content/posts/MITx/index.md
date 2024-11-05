@@ -2,6 +2,7 @@
 title = 'MITx Statistics and Data Science'
 date = 2024-09-17T02:22:43+08:00
 draft = false
+tags = ["自学"]
 +++
 
 

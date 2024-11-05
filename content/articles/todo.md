@@ -2,7 +2,8 @@
 title = '想做的事'
 date = 2024-10-07T20:43:10+08:00
 draft = false
-tags = ['todo']
+tags = ["备忘"]
+hidden = true
 +++
 
 ### 因子框架（P quant）
