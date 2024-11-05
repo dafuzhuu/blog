@@ -5,8 +5,6 @@ draft = false
 tags = ['exam']
 +++
 
-[toefl-speaking](/toefl-speaking)
-
 ## 进度
 
 ### Reading
@@ -98,6 +96,8 @@ tags = ['exam']
 
 ### Speaking
 
+[toefl-speaking](/toefl-speaking)
+
 | 题型 | 掌握程度 |
 | --- | --- |
 | Task 1 | 0.9 |
@@ -108,3 +108,10 @@ tags = ['exam']
 ### Writing
 
 考前写两篇综合、两篇学术讨论
+
+| Date   | Task    | Status    |
+| --- | --- | --- |
+| 2024-11-07 | 综合写作1 |     |
+|            | 学术讨论1 |     |
+| 2024-11-08 | 综合写作2 |      |
+|           | 学术讨论2 |     |
