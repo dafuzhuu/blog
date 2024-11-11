@@ -41,7 +41,7 @@ tags = ['exam']
 
 ### 阅读
 
-全程按HUGE的来，[点击网盘链接](https://pan.baidu.com/s/1te04vh0YQc2f_uXLd4knRQ?pwd=2024)
+全程按HUGE的来，[网盘链接](https://pan.baidu.com/s/1te04vh0YQc2f_uXLd4knRQ?pwd=2024)
 
 这套课备考时长4周
 
@@ -54,7 +54,7 @@ tags = ['exam']
 
 ### 听力
 
-还是按HUGE的来，[点击网盘链接](https://pan.baidu.com/s/1onTNPvUTPZQn3M_e8O77PA?pwd=2024)
+还是按HUGE的来，[网盘链接](https://pan.baidu.com/s/1onTNPvUTPZQn3M_e8O77PA?pwd=2024)
 
 这套课分以下几个部分
 
@@ -67,7 +67,7 @@ tags = ['exam']
 
 ### 口语
 
-推荐吴奇，[点击网盘链接](https://pan.baidu.com/s/1hlI2fhSqzoHqx3tmnIjIwA?pwd=2024)
+推荐吴奇，[网盘链接](https://pan.baidu.com/s/1hlI2fhSqzoHqx3tmnIjIwA?pwd=2024)
 
 他的课比较长，我重点听了方法论部分，随后的例题讲解听了一部分，没听完
 
@@ -80,7 +80,7 @@ tags = ['exam']
 1. Part 1 部分 “综合写作的本质是什么”，讲清楚了做题策略
 2. Part 2 部分TPO范文，提炼话术
 
-学术讨论我没找到好资料，就随便弄了些[范文](https://toefl.koolearn.com/20230813/856388.html)看看
+学术讨论我没找到好资料，就随便弄了些[范文](https://toefl.koolearn.com/20231214/857773.html)看看
 
 ## 对各题型的感想
 
@@ -90,7 +90,7 @@ tags = ['exam']
 
 不是看谁最对，而是看谁最错。小结题一定是用排除法做的，把有明显错误的排掉，把无中生有的排掉，把细枝末节的排掉，剩下的是对的。如果排掉不止3个选项也很正常，因为正确选项也不没有很正确，有些措辞其实不严谨。但只要没有大的错误（比如原文说是A，选项说是非A），就算他对
 
-![alt text](img/toefl_summary/image.png)
+![alt text](./img/toefl_summary/image.png)
 
 这题折磨我很久了，感觉没什么捷径，就是不断读不断练，慢慢就能形成一种直觉，判断谁对谁错
 
