@@ -30,12 +30,26 @@ Please describe, within 1000 words, how your personal journey has influenced you
 
 ## NYU MFE
 
-- Resume/CV
-- Statement of Purpose (?)
+**Resume/CV**
+
+**Application Essays (Required)**
+
+As part of your application, you are expected to provide a response, in written form, to two prompts. A response to both prompts is required. This is an opportunity for you to give us a stronger sense of who you are, as a person. Your essay should be as unique as you and should be written using your own voice. Include each prompt as the header for each of your two responses.
+When finished, combine your response to both prompts into one, single PDF and upload it below. Your total essay upload should be 12pt Arial font and no more than two pages, double-spaced, in length.
+
+Prompt 1: Drawing from your previous academic, professional and personal experiences, tell us what has attracted you to the program of study you have noted in your application. Be very specific about your past experiences and how they shaped your interests. 
+
+Prompt 2: Students often have a wide range of ideas and plans for what they hope to achieve after they receive their graduate degree. Tell us what your 5-year plan is after completing a degree from NYU Tandon.
 
 ## HKU FinTech
 
-Supporting Documents (?)
+**Reasons for Interest in this Programme**
+ 
+Please provide below a statement explaining why you are interested in studying this Programme, why you are suitable for it and the value of the Master of Finance in Financial Technology Programme to your future career.
+
+## GIT
+
+None
 
 ## UCLA MFE
 
