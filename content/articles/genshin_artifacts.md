@@ -7,6 +7,8 @@ tags = ["原神"]
 
 [教程视频](https://www.bilibili.com/video/BV1Hs4y1574D/?spm_id_from=333.337.search-card.all.click&vd_source=0747a479964faef65dc22d966c973b66)
 
+附：[副本手册](../pdf/原神副本手册.pdf)
+
 哪些是有效词条：
 
 ![有效词条](../img/genshin_artifacts/有效词条.png)
