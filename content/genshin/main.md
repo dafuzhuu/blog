@@ -1,7 +1,8 @@
 +++
-title = '原神主页'
+title = '原神备忘录'
 date = 2024-11-26T01:33:21+08:00
 draft = false
+tags = ["原神"]
 +++
 
 [卡池计时器](https://wiki.biligame.com/ys/%E5%8D%A1%E6%B1%A0%E8%AE%A1%E6%97%B6%E5%99%A8)
