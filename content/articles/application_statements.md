@@ -30,8 +30,6 @@ Please describe, within 1000 words, how your personal journey has influenced you
 
 ## NYU MFE
 
-**Resume/CV**
-
 **Application Essays (Required)**
 
 As part of your application, you are expected to provide a response, in written form, to two prompts. A response to both prompts is required. This is an opportunity for you to give us a stronger sense of who you are, as a person. Your essay should be as unique as you and should be written using your own voice. Include each prompt as the header for each of your two responses.
@@ -40,6 +38,19 @@ When finished, combine your response to both prompts into one, single PDF and up
 Prompt 1: Drawing from your previous academic, professional and personal experiences, tell us what has attracted you to the program of study you have noted in your application. Be very specific about your past experiences and how they shaped your interests. 
 
 Prompt 2: Students often have a wide range of ideas and plans for what they hope to achieve after they receive their graduate degree. Tell us what your 5-year plan is after completing a degree from NYU Tandon.
+
+**Financial Engineering Required Video Upload**
+
+A one minute video is required as part of your application to the MSFE program. We require this so that we can better assess your language and presentation skills. You must be present, alone, and be seen speaking in the video.
+Post the video to Youtube or Vimeo and share the link for viewing. Please do not password protect the video, however, if necessary, please share the password in the space provided.
+
+Choose one question below to address in your video. Keep in mind that your video should be no longer than one minute. 
+
+Share with us a time that you failed at something that was important to you. How did you handle this? How did it impact you?
+
+What are your career goals? Share your 5-year plan with us.
+
+Tell us about something you have done that you are most proud of. Why was it so important to you, and how did you go about accomplishing this?
 
 ## HKU FinTech
 
