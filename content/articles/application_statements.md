@@ -46,11 +46,9 @@ Post the video to Youtube or Vimeo and share the link for viewing. Please do not
 
 Choose one question below to address in your video. Keep in mind that your video should be no longer than one minute. 
 
-Share with us a time that you failed at something that was important to you. How did you handle this? How did it impact you?
-
-What are your career goals? Share your 5-year plan with us.
-
-Tell us about something you have done that you are most proud of. Why was it so important to you, and how did you go about accomplishing this?
+- Share with us a time that you failed at something that was important to you. How did you handle this? How did it impact you?
+- What are your career goals? Share your 5-year plan with us.
+- Tell us about something you have done that you are most proud of. Why was it so important to you, and how did you go about accomplishing this?
 
 ## HKU FinTech
 
