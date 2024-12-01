@@ -58,7 +58,18 @@ Please provide below a statement explaining why you are interested in studying t
 
 ## GIT
 
-None
+Describe your academic/professional motivation for applying to the MS QCF program. Aside from drawing upon your past and/or present work and academic experiences, how do you envision your career progressing after earning this degree? (within 750 words)
+
+Describe a project or research you worked on in a class, capstone, lab, work, etc. that was meaningful to you and relevant to your candidacy for the MS QCF program. Your answer should include: (within 750 words)
+- A brief, high-level description of the work
+- Significance of the work
+- Appropriate details on your approach
+- Results achieved
+- Lessons learned
+
+Please detail your programming experience. What programming languages are you comfortable using and what do you consider to be your proficiency levels with those languages? (within 500 words)
+
+
 
 ## UCLA MFE
 
