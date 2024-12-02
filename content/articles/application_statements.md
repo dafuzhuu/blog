@@ -73,6 +73,16 @@ Please detail your programming experience. What programming languages are you co
 
 ## UCLA MFE
 
+**Essays**
+
+*Essay 1*
+
+Financial engineering requires a combination of mathematical/quantitative abilities and creative thinking. Describe a project you worked on, either as a student or professional, that demonstrates your analytical and creative problem-solving skills. Tell us why this project was interesting to you. (Maximum 750 words)
+
+*Essay 2*
+
+Why does a career in quantitative finance appeal to you? Based on your abilities and what you know about careers in financial engineering, why do you think this is the right career path for you? (Maximum 750 words)
+
 **Statement of Purpose**
 
 What is the statement of purpose, and what is it used for?
@@ -111,6 +121,10 @@ Do not include background music or subtitles
 Note: While we ask you to introduce yourself to your future classmates in this video, the video will not be shared beyond the admissions committee and is for use in the application process only. 
 
 Upon completion of essential application components, a prompt for an additional video question will appear. All applicants must complete both video questions.
+
+**Video Question 2**
+
+[MIT Video2 Behavior Questions](../mit_video2)
 
 **Short-Answer Question**
 
