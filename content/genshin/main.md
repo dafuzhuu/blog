@@ -77,3 +77,7 @@ tags = ["原神"]
 另外枫丹地区的宝箱扫图，下次从 [苍晶区2](https://www.bilibili.com/video/BV1pN411q7wH?spm_id_from=333.788.videopod.episodes&vd_source=0747a479964faef65dc22d966c973b66&p=8) 继续
 
 看视频跑图还挺好的，高效、省了很多盲目跑图的时间；而且像看剧一样，每次看之前计划好看多少集，不会一玩起来就没停，这样会比较有计划
+
+*2024.12.8*
+
+打算先过一下枫丹开图主线，今早过完了藻海的踪迹，下一个是 [救世者的守灵](https://www.bilibili.com/video/BV1eM411S7Kn?spm_id_from=333.788.videopod.sections&vd_source=0747a479964faef65dc22d966c973b66)
