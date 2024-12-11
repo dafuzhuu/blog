@@ -1,3 +1,6 @@
 [submodule "themes/PaperMod"]
 	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/fluency"]
+	path = themes/fluency
+	url = git@github.com:wayjam/hugo-theme-fluency.git

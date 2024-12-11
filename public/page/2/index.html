@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"
+>
+  
+
+
+
+  
+  
+
+
+<head lang="en"><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+  <meta name="author" content="Dafu">
+  <meta name="keywords" content="">
+  <title>Blog</title>
+  <link rel="canonical" href="http://localhost:1313/blog/" />
+  
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/blog/index.xml" title="Blog">
+  
+
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+  <meta property="og:title" content="Blog" />
+  <meta property="og:site_name" content="Blog" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:url" content="http://localhost:1313/blog/" />
+  <meta property="og:locale" content="en" />
+
+  
+
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Blog" />
+  <meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod" />
+  <meta name="twitter:domain" content="http://localhost:1313/blog/" />
+
+  
+  
+    <link rel="icon" href="http://localhost:1313/blog/favicon.ico">
+  
+  
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
+
+  
+  
+  
+
+  
+
+  
+    <link rel="stylesheet" href="http://localhost:1313/blog/style.css" rel="preload stylesheet" as="style"/>
+  
+
+  
+  
+</head>
+
+  <body>
+    <header id="header">
+  <div class="row">
+    <div class="container has-padding nav">
+      <button id="navbar-toggler" class="navbar-button" aria-hidden="true">
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M64 384h384v-42.67H64zm0-106.67h384v-42.66H64zM64 128v42.67h384V128z'/></svg>
+
+
+
+
+
+</button>
+      <div class="navbar-brand">
+        <a class="logo navbar-button" href="http://localhost:1313/blog/" title="Blog">
+          <span>Blog</span>
+        </a>
+      </div>
+      <nav class="navbar" role="navigation">
+        <ul>
+          
+          
+            <li class="nav-bar-item active">
+              <a class="nav-link navbar-button" href="/blog/archives/" title="Archive">
+                <span>archive</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item active">
+              <a class="nav-link navbar-button" href="/blog/search/" title="Search">
+                <span>search</span>
+              </a>
+            </li>
+          
+            <li class="nav-bar-item active">
+              <a class="nav-link navbar-button" href="/blog/tags/" title="Tags">
+                <span>tags</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+      <div class="theme-selector">
+        <button class="button is-text" id="theme-selector-button" title="toggle theme">
+          <span class="label icon">
+
+
+
+
+
+<svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><path d='M256 32C132.29 32 32 132.29 32 256s100.29 224 224 224 224-100.29 224-224S379.71 32 256 32zM128.72 383.28A180 180 0 01256 76v360a178.82 178.82 0 01-127.28-52.72z'/></svg>
+
+
+
+
+
+
+
+
+
+
+
+</span>
+        </button>
+      </div>
+    </div>
+    
+      <div class="container has-padding">
+        <div class="breadcrumb">
+          
+
+
+
+        </div>
+      </div>
+    
+  </div>
+</header>
+
+    
+<main id="main" class="index-page homepage" role="main">
+  <div class="container has-padding">
+    
+    
+    
+
+    
+    <div class="article-list">
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/blog/articles/todo/" title="想做的事">想做的事</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><h3 id="因子框架p-quant">因子框架（P quant）</h3>
+<p>动机：聚宽等回测平台自由度低，受服务器CPU、内存、环境配置等限制</p>
+<p>思路：</p>
+<ol>
+<li>获取数据用tushare（最多只需5000积分，即500元）、baostock</li>
+<li>每日将数据自动导入进数据库（租云服务器？本地？）</li>
+<li>设计数据调用接口</li>
+<li>搬运聚宽上的框架，并拓展功能</li>
+<li>计算因子库</li>
+</ol>
+<p>顾虑：</p>
+<ol>
+<li>时间！目前估计需要全力1个月，这个时间是否应该用来做更重要的事</li>
+<li>是否值得：成本能否控制？由于功能一定不如付费的完备，那么成本能否远低于其他？（比如choice的api是3w一年）</li>
+</ol></p>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/blog/articles/todo/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2024-09-30T20:43:10&#43;0800" class="date">September 30, 2024</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/blog/articles/set_ssh/" title="使用SSH密钥进行身份验证">使用SSH密钥进行身份验证</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><p>SSH（Secure Shell）公钥是用于在网络通信中实现安全身份验证的一种加密方式。</p>
+<h1 id="ssh原理">SSH原理</h1>
+<p><strong>非对称加密</strong>：SSH公钥认证使用非对称加密技术，这种技术涉及一对密钥：公钥和私钥。</p>
+<ul>
+<li><strong>公钥（Public Key）</strong>：可以公开发布，任何人都可以获取。</li>
+<li><strong>私钥（Private Key）</strong>：必须严格保密，只能由密钥的拥有者持有。</li>
+</ul>
+<p><strong>加密与解密</strong>：</p>
+<ul>
+<li><strong>加密</strong>：公钥用于加密数据。由于公钥是公开的，任何人都可以使用它加密信息。</li>
+<li><strong>解密</strong>：只有对应的私钥可以解密由公钥加密的信息。这确保了只有密钥的拥有者（持有私钥的人）才能读取加密内容。</li>
+</ul>
+<p><strong>身份验证过程</strong>：</p>
+<ul>
+<li><strong>生成密钥对</strong>：用户首先在本地设备上生成一对公钥和私钥。</li>
+<li><strong>上传公钥</strong>：用户将公钥上传到需要访问的远程服务器（如GitHub、远程Linux服务器）。</li>
+<li><strong>私钥保密</strong>：私钥保存在用户的本地设备上，不与任何人共享。</li>
+</ul>
+<p><strong>连接与认证</strong>：</p>
+<ul>
+<li>当用户尝试通过SSH连接到远程服务器时，服务器会生成一个随机数并使用用户的公钥对其加密，然后将加密后的数据发送给用户。</li>
+<li>用户的SSH客户端使用本地的私钥解密服务器发送的加密数据。</li>
+<li>如果解密成功，用户客户端将解密结果发回给服务器。</li>
+<li>服务器验证解密结果是否正确，以确认用户持有相应的私钥。如果正确，身份验证通过。</li>
+</ul>
+<p><strong>确保安全</strong>：</p>
+<ul>
+<li><strong>安全性</strong>：由于私钥从不在网络上传输，攻击者无法通过截获通信数据来获取私钥。</li>
+<li><strong>防篡改</strong>：即使攻击者获取了公钥，无法伪装成合法用户，因为他们没有对应的私钥。</li>
+</ul>
+<p><strong>优势</strong>：</p>
+<ul>
+<li><strong>高安全性</strong>：相比传统的用户名/密码认证，SSH公钥认证更加安全，因为私钥不会在网络上传输，并且密钥对是独一无二的。</li>
+<li><strong>无密码登录</strong>：SSH公钥认证允许无密码的自动化登录，便于脚本、自动化工具和日常运维。</li>
+<li><strong>管理便捷</strong>：可以为每个设备或用户设置不同的公钥，并且可以随时管理和撤销。</li>
+</ul>
+<h1 id="如何设置ssh">如何设置SSH</h1>
+<h2 id="生成ssh密钥">生成SSH密钥</h2>
+<ol>
+<li>
+<p>打开终端并输入以下命令来生成新的SSH密钥：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -t ed25519 -C <span class="s2">&#34;your_email@example.com&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>当系统提示时，按回车键以接受默认的文件路径（通常是 <code>~/.ssh/id_ed25519</code>）。</p>
+</li>
+<li>
+<p>接着，系统会要求你设置一个密码短语。你可以选择设置，也可以直接按回车跳过。</p>
+</li>
+</ol>
+<h2 id="添加ssh密钥到ssh代理">添加SSH密钥到SSH代理</h2>
+<h3 id="macos">macOS</h3>
+<ol>
+<li>
+<p>启动SSH代理：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">eval</span> <span class="s2">&#34;</span><span class="k">$(</span>ssh-agent -s<span class="k">)</span><span class="s2">&#34;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>将生成的SSH密钥添加到SSH代理中：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-add ~/.ssh/id_ed25519
+</span></span></code></pre></div></li>
+</ol>
+<h3 id="windows">Windows</h3>
+<ol>
+<li>
+<p>启动SSH代理：</p>
+<p>在菜单栏右击 Powershell，以管理员身份打开。运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Set-Service</span> <span class="n">-Name</span> <span class="nb">ssh-agent</span> <span class="n">-StartupType</span> <span class="n">Manual</span>
+</span></span><span class="line"><span class="cl"><span class="nb">Start-Service</span> <span class="nb">ssh-agent</span>
+</span></span></code></pre></div><p>为确认SSH agent已经在运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">Get-Service</span> <span class="nb">ssh-agent</span>
+</span></span></code></pre></div><p>如果在运行会输出</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">Status</span>   <span class="n">Name</span>               <span class="n">DisplayName</span>
+</span></span><span class="line"><span class="cl"><span class="p">------</span>   <span class="p">----</span>               <span class="p">-----------</span>
+</span></span><span class="line"><span class="cl"><span class="n">Running</span>  <span class="nb">ssh-agent</span>          <span class="n">OpenSSH</span> <span class="n">Authentication</span> <span class="n">Agent</span>
+</span></span></code></pre></div></li>
+<li>
+<p>将生成的SSH密钥添加到SSH代理中</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="nb">ssh-add</span> <span class="n">C:</span><span class="p">\</span><span class="n">path</span><span class="p">\</span><span class="n">to</span><span class="p">\</span><span class="n">your</span><span class="p">\</span><span class="n">private</span><span class="p">\</span><span class="n">key</span>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="将ssh密钥添加到github">将SSH密钥添加到GitHub</h2>
+<ol>
+<li>
+<p>查看你的SSH公钥：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat ~/.ssh/id_ed25519.pub
+</span></span></code></pre></div><p>然后复制输出的内容。
+SSH公钥的格式通常是一个单行的文本字符串，包含了三部分内容：加密类型、加密公钥数据和注释（通常是你的邮箱地址）。以下是一个典型的SSH公钥格式示例：</p></p>
+            
+              <span class="hellip">&hellip;</span>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/blog/articles/set_ssh/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2024-08-31T11:09:42&#43;0800" class="date">August 31, 2024</time>
+        </div>
+      </article>
+      
+      <article class="post">
+        <h3 class="title">
+          <a href="http://localhost:1313/blog/articles/coursera_study/" title="Coursera自学指南">Coursera自学指南</a>
+        </h3>
+        
+          <div class="content summary">
+            <p><h1 id="math">Math</h1>
+<ul>
+<li><a href="https://www.coursera.org/learn/matrix-algebra-engineers?specialization=mathematics-engineers">Matrix Algebra for Engineers</a></li>
+<li><a href="https://learning.edx.org/course/course-v1:UTAustinX+UT.ALA+1T2022/home">Advanced Linear Algebra</a></li>
+<li><a href="https://www.coursera.org/learn/differential-equations-engineers?specialization=mathematics-engineers">Differential Equations for Engineers</a></li>
+<li><a href="https://www.coursera.org/learn/vector-calculus-engineers?specialization=mathematics-engineers">Vector Calculus for Engineers</a></li>
+<li><a href="https://www.coursera.org/learn/mathematics-engineers-capstone?specialization=mathematics-engineers">Mathematics for Engineers: The Capstone Course</a></li>
+<li><a href="https://www.coursera.org/learn/complex-analysis">Introduction to Complex Analysis</a></li>
+<li><a href="https://www.coursera.org/learn/combinatorics?specialization=discrete-mathematics">Combinatorics and Probability</a></li>
+<li><a href="https://learning.edx.org/course/course-v1:KyotoUx+009x+2T2017/progress">Stochastic Processes: Data Analysis and Computer Simulation</a></li>
+<li><a href="https://www.coursera.org/learn/mcmc-bayesian-statistics">Bayesian Statistics</a></li>
+<li><a href="https://www.coursera.org/learn/illinois-tech-statistical-learning">Statistical Learning</a></li>
+<li><a href="https://learning.edx.org/course/course-v1:MITx+6.86x+2T2024/home">Machine Learning with Python-From Linear Models to Deep Learning</a></li>
+<li><a href="https://www.coursera.org/learn/wharton-quantitative-modeling">Fundamentals of Quantitative Modeling</a></li>
+<li><a href="https://www.coursera.org/learn/introduction-to-predictive-modeling?specialization=analytics-for-decision-making">Introduction to Predictive Modeling</a></li>
+<li><a href="https://www.coursera.org/learn/discrete-optimization">Discrete Optimization</a></li>
+<li><a href="https://www.coursera.org/learn/optimization-for-decision-making?specialization=analytics-for-decision-making">Optimization for Decision Making</a></li>
+<li><a href="https://www.coursera.org/learn/advanced-models-for-decision-making?specialization=analytics-for-decision-making">Advanced Models for Decision Making</a></li>
+<li><a href="https://www.coursera.org/learn/simulation-models-for-decision-making?specialization=analytics-for-decision-making">Simulation Models for Decision Making</a></li>
+<li><a href="https://www.coursera.org/learn/operations-research-modeling">Operations Research (1): Models and Applications</a></li>
+<li><a href="https://www.coursera.org/learn/operations-research-algorithms">Operations Research (2): Optimization Algorithms</a></li>
+<li><a href="https://www.coursera.org/learn/operations-research-theory">Operations Research (3): Theory</a></li>
+<li><a href="https://www.coursera.org/learn/analytic-combinatorics">Analytic Combinatorics</a></li>
+<li><a href="https://www.coursera.org/learn/mathematical-thinking">Mathematical Thinking</a></li>
+<li><a href="https://www.coursera.org/learn/what-is-a-proof?specialization=discrete-mathematics">Mathematical Thinking in Computer Science</a></li>
+<li><a href="https://www.coursera.org/learn/number-theory-cryptography?specialization=discrete-mathematics">Number Theory and Cryptography</a></li>
+<li><a href="https://www.coursera.org/learn/delivery-problem?specialization=discrete-mathematics">Delivery Problem</a></li>
+<li><a href="https://www.coursera.org/learn/quantitative-model-checking">Quantitative Model Checking</a></li>
+</ul>
+<h1 id="computer-science">Computer Science</h1>
+<ul>
+<li><a href="https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science">CS50&rsquo;s Introduction to Computer Science</a></li>
+<li><a href="https://www.coursera.org/learn/cs-fundamentals-1?specialization=cs-fundamentals">Object-Oriented Data Structures in C++</a></li>
+<li><a href="https://www.coursera.org/learn/algorithmic-toolbox?specialization=data-structures-algorithms">Algorithmic Toolbox</a></li>
+<li><a href="https://www.coursera.org/learn/cs-fundamentals-2?specialization=cs-fundamentals">Ordered Data Structures</a></li>
+<li><a href="https://www.coursera.org/learn/cs-fundamentals-3?specialization=cs-fundamentals">Unordered Data Structures</a></li>
+<li><a href="https://www.coursera.org/learn/introduction-git-github">Introduction to Git and GitHub</a></li>
+<li><a href="https://sp24.datastructur.es/">CS 61B Spring 2024</a></li>
+<li><a href="https://www.coursera.org/learn/data-structures?specialization=data-structures-algorithms">Data Structures</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-on-graphs?specialization=data-structures-algorithms">Algorithms on Graphs</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-on-strings?specialization=data-structures-algorithms">Algorithms on Strings</a></li>
+<li><a href="https://www.coursera.org/learn/advanced-algorithms-and-complexity?specialization=data-structures-algorithms">Advanced Algorithms and Complexity</a></li>
+<li><a href="https://www.coursera.org/learn/graphs?specialization=discrete-mathematics">Introduction to Graph Theory</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-divide-conquer?specialization=algorithms">Divide and Conquer, Sorting and Searching, and Randomized Algorithms</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-graphs-data-structures?specialization=algorithms">Graph Search, Shortest Paths, and Data Structures</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-greedy?specialization=algorithms">Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming</a></li>
+<li><a href="https://www.coursera.org/learn/algorithms-npcomplete?specialization=algorithms">Shortest Paths Revisited, NP-Complete Problems and What To Do About Them</a></li>
+<li><a href="https://www.coursera.org/learn/probabilistic-graphical-models?specialization=probabilistic-graphical-models">Probabilistic Graphical Models 1: Representation</a></li>
+<li><a href="https://www.coursera.org/learn/probabilistic-graphical-models-2-inference?specialization=probabilistic-graphical-models">Probabilistic Graphical Models 2: Inference</a></li>
+<li><a href="https://www.coursera.org/learn/probabilistic-graphical-models-3-learning?specialization=probabilistic-graphical-models">Probabilistic Graphical Models 3: Learning</a></li>
+<li><a href="https://www.coursera.org/learn/deep-neural-networks-with-pytorch">Deep Neural Networks with PyTorch</a></li>
+<li><a href="https://www.coursera.org/learn/classification-vector-spaces-in-nlp/home/welcome">Natural Language Processing with Classification and Vector Spaces</a></li>
+<li><a href="https://www.coursera.org/learn/text-retrieval?specialization=data-mining">Text Retrieval and Search Engines</a></li>
+<li><a href="https://www.coursera.org/learn/text-mining?specialization=data-mining">Text Mining and Analytics</a></li>
+<li><a href="https://www.coursera.org/learn/python-text-mining?specialization=data-science-python">Applied Text Mining in Python</a></li>
+<li><a href="https://www.coursera.org/learn/data-patterns?specialization=data-mining">Pattern Discovery in Data Mining</a></li>
+<li><a href="https://www.coursera.org/learn/cluster-analysis?specialization=data-mining">Cluster Analysis in Data Mining</a></li>
+<li><a href="https://www.bilibili.com/video/BV1TD4y137mP/?vd_source=0747a479964faef65dc22d966c973b66">李宏毅2023春机器学习</a></li>
+<li><a href="https://www.coursera.org/learn/fundamentals-of-reinforcement-learning?specialization=reinforcement-learning">Fundamentals of Reinforcement Learning</a></li>
+<li><a href="https://www.coursera.org/learn/sample-based-learning-methods?specialization=reinforcement-learning">Sample-based Learning Methods</a></li>
+<li><a href="https://www.coursera.org/learn/prediction-control-function-approximation?specialization=reinforcement-learning">Prediction and Control with Function Approximation</a></li>
+<li><a href="https://www.coursera.org/learn/complete-reinforcement-learning-system?specialization=reinforcement-learning">A Complete Reinforcement Learning System (Capstone)</a></li>
+<li><a href="https://www.coursera.org/projects/googlecloud-reinforcement-learning-qwik-start-yqsij">Reinforcement Learning: Qwik Start</a></li>
+<li><a href="https://www.coursera.org/learn/python-plotting?specialization=data-science-python">Applied Plotting, Charting &amp; Data Representation in Python</a></li>
+<li><a href="https://www.coursera.org/learn/narrative-economics">Narrative Economics</a></li>
+<li><a href="https://www.coursera.org/learn/social-economic-networks">Social and Economic Networks</a></li>
+<li><a href="https://www.coursera.org/learn/python-social-network-analysis?specialization=data-science-python">Applied Social Network Analysis in Python</a></li>
+<li><a href="https://www.coursera.org/learn/linux-and-sql">Tools of the Trade: Linux and SQL</a></li>
+</ul>
+<h1 id="finance">Finance</h1>
+<ul>
+<li><a href="https://www.coursera.org/learn/financial-engineering-intro?specialization=financialengineering">Introduction to Financial Engineering and Risk Management</a></li>
+<li><a href="https://www.coursera.org/learn/interest-rate-models">Interest Rate Models</a></li>
+<li><a href="https://www.coursera.org/learn/pricing-options-with-mathematical-models">Pricing Options with Mathematical Models</a></li>
+<li><a href="https://www.coursera.org/learn/financial-engineering-termstructure?specialization=financialengineering">Term-Structure and Credit Derivatives</a></li>
+<li><a href="https://www.coursera.org/learn/financial-engineering-optimizationmethods?specialization=financialengineering">Optimization Methods in Asset Management</a></li>
+<li><a href="https://www.coursera.org/learn/financial-engineering-advancedtopics?specialization=financialengineering">Advanced Topics in Derivative Pricing</a></li>
+<li><a href="https://www.coursera.org/learn/financial-engineering-computationalmethods?specialization=financialengineering">Computational Methods in Pricing and Model Calibration</a></li>
+<li><a href="https://www.bilibili.com/video/BV1fv411r7z1/?spm_id_from=333.337.search-card.all.click">机器学习与量化投资（复旦）</a></li>
+<li><a href="https://www.coursera.org/learn/reinforcement-learning-in-finance">Reinforcement Learning in Finance</a></li>
+</ul>
+<h1 id="elective-courses">Elective Courses</h1>
+<ul>
+<li><a href="https://www.coursera.org/learn/study-in-usa">Applying to U.S. Universities</a></li>
+<li><a href="https://www.theforage.com/simulations/jpmorgan/quantitative-research-11oc">JPMorgan量化项目</a></li>
+<li><a href="https://www.coursera.org/specializations/digital-signal-processing">Digital Signal Processing Specialization</a></li>
+<li><a href="https://www.coursera.org/learn/fintech">FinTech Foundations and Overview</a></li>
+<li><a href="https://www.coursera.org/projects/text-generation-markov-chains-python">Text Generation with Markov Chains in Python</a></li>
+<li><a href="https://www.coursera.org/learn/finite-element-method">The Finite Element Method for Problems in Physics</a></li>
+<li><a href="https://www.coursera.org/learn/recommender-systems-introduction?specialization=recommender-systems">Introduction to Recommender Systems: Non-Personalized and Content-Based</a></li>
+<li><a href="https://www.coursera.org/learn/collaborative-filtering?specialization=recommender-systems">Nearest Neighbor Collaborative Filtering</a></li>
+<li><a href="https://www.coursera.org/learn/recommender-metrics?specialization=recommender-systems">Recommender Systems: Evaluation and Metrics</a></li>
+<li><a href="https://www.coursera.org/learn/matrix-factorization?specialization=recommender-systems">Matrix Factorization and Advanced Techniques</a></li>
+<li><a href="https://www.coursera.org/learn/recommeder-systems-capstone?specialization=recommender-systems">Recommender Systems Capstone</a></li>
+</ul>
+<h1 id="其他">其他</h1>
+<ul>
+<li><a href="https://probability.xmu.edu.cn/">概率论与统计学</a></li>
+<li><a href="https://zh.d2l.ai/">动手学深度学习</a></li>
+<li><a href="https://www.bilibili.com/video/BV1aE411o7qd/?spm_id_from=333.337.search-card.all.click">机器学习白板推导</a></li>
+<li><a href="https://hrl.boyuai.com/chapter/intro">动手学强化学习</a></li>
+<li><a href="http://introtodeeplearning.com/">MIT深度学习</a></li>
+<li><a href="https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/">Gil的矩阵论</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Pg4y187Ed/?spm_id_from=333.337.search-card.all.click">Stanford的最优化</a></li>
+<li><a href="https://www.devtaoism.com/">Manim</a></li>
+<li><a href="https://computationalthinking.mit.edu/Spring21/">Julia编程</a></li>
+<li><a href="https://www.hello-algo.com/">hello算法</a></li>
+<li><a href="https://www.bilibili.com/video/BV1pw411Z7Ds?p=1">测度论与概率论</a></li>
+<li><a href="https://www.bilibili.com/video/BV1GY4y1V7P8?p=1">实变函数：陈闯（川大）</a></li>
+<li><a href="https://www.bilibili.com/video/BV1wj411k7Tj">随机过程：张颢（清华）</a></li>
+<li><a href="https://www.bilibili.com/video/BV1C7411Z7xh?p=1">抽象代数</a></li>
+<li><a href="https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/">泛函分析</a></li>
+<li><a href="https://wangzhe3224.github.io/zhuan-ma/core/core/">转码路线图</a></li>
+<li><a href="https://www.joinquant.com/view/community/detail/8ec7aaaa899cf928550f89a104637f22">快速入门量化</a></li>
+<li><a href="https://web.stanford.edu/class/cs106a/">Programming Methodology</a></li>
+<li><a href="https://web.stanford.edu/class/cs111/">Operating Systems Principles</a></li>
+<li><a href="https://www.deeplearningbook.org/">Deep Learning Book</a></li>
+<li><a href="https://www.icourses.cn/web/sword/portal/shareDetails?cId=6080#/course/chapter">金融工程</a></li>
+<li><a href="https://www.bilibili.com/video/BV12o4y197US">王树森：深度强化学习</a></li>
+<li><a href="https://www.youtube.com/watch?v=vT1JzLTH4G4">CS231n：CV</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLoROMvodv4rOSH4v6133s9LFPRHjEmbmJ">CS224n：NLP</a> [前10节入门（必做），后面的选做]</li>
+<li><a href="https://www.bilibili.com/video/BV1P3411u7c1/">邱锡鹏：神经网络与深度学习</a></li>
+<li><a href="https://www.bilibili.com/video/BV1Sx421f7Dj">MIT矩阵微积分</a></li>
+<li><a href="https://www.bilibili.com/video/BV1614y1D7Sh">MIT6.824分布式系统</a></li>
+<li><a href="https://www.bilibili.com/video/BV1gA411T7ar/">复变函数：国立清华</a></li>
+<li><a href="https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/">Topics In Mathematics With Applications In Finance</a></li>
+<li><a href="https://ocw.mit.edu/courses/15-070j-advanced-stochastic-processes-fall-2013/">Advanced Stochastic Processes</a></li>
+<li><a href="https://www.math.toronto.edu/ivan/mat327/?resources">Point Set Topology</a></li>
+<li><a href="https://github.com/Lordog/dive-into-llms">上交《动手学大模型》</a></li>
+<li><a href="https://github.com/PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original">Machine learning for algorithmic trading</a></li>
+<li>Quantitative Primer</li>
+<li><a href="https://roadmap-bucket-sa.s3.us-east-2.amazonaws.com/RoadmapUltimateEdition.pdf">Quant Roadmap</a></li>
+<li><a href="https://macrosynergy.com/">学长推荐</a>：学一下海外的正经机构是如何做投资的，从顶层思路构建、到策略设计、到风控</li>
+</ul></p>
+            
+          </div>
+          <a class="readmore" href="http://localhost:1313/blog/articles/coursera_study/" aria-label="READ MORE">READ MORE</a>
+        
+        <div class="date float-right">
+          
+          <time datetime="2024-08-28T21:45:01&#43;0800" class="date">August 28, 2024</time>
+        </div>
+      </article>
+      
+    </div>
+    
+
+
+<div class="pagination">
+  <ul class="pagination-container">
+    
+      <li class="page-item to-left">
+        <a href="/blog/" class="page-link" aria-label="Previous">
+          <span aria-hidden="true">&#xab; Previous</span>
+        </a>
+      </li>
+    
+
+    
+    
+
+    
+      
+      
+      
+      
+      
+        
+        
+      
+
+      
+        <li class="page-item  page-number"><a class="page-link" href="/blog/">1</a></li>
+      
+    
+      
+      
+      
+      
+      
+        
+        
+      
+
+      
+        <li class="page-item current page-number"><a class="page-link" href="/blog/page/2/">2</a></li>
+      
+    
+
+    
+  </ul>
+</div>
+
+
+
+  </div>
+</main>
+
+    <footer id="footer">
+  <div class="container has-padding is-flex">
+    <ul class="links">
+      
+      <li>
+          <a class="nav-link navbar-button" href="http://localhost:1313/blog/index.xml" type="application/rss&#43;xml">RSS</a>
+        </li>
+      <li>
+        <a
+          rel="nofollow"
+          target="_blank"
+          href="https://github.com/wayjam/hugo-theme-fluency"
+          title="using Hugo theme fluency">
+          Theme Fluency
+        </a>
+      </li>
+      <li>
+        <a rel="nofollow" target="_blank" href="https://gohugo.io" title="Built with hugo">Built with Hugo</a>
+      </li>
+    </ul>
+    <div class="copyright">
+       &copy; 2024 Blog
+      
+    </div>
+  </div>
+</footer>
+
+<script>
+    window.FluencyCopyIcon = '\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u003csvg xmlns=\u0027http:\/\/www.w3.org\/2000\/svg\u0027 class=\u0027ionicon\u0027 viewBox=\u00270 0 512 512\u0027\u003e\u003crect x=\u0027128\u0027 y=\u0027128\u0027 width=\u0027336\u0027 height=\u0027336\u0027 rx=\u002757\u0027 ry=\u002757\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003cpath d=\u0027M383.5 128l.5-24a56.16 56.16 0 00-56-56H112a64.19 64.19 0 00-64 64v216a56.16 56.16 0 0056 56h24\u0027 stroke-linecap=\u0027round\u0027 stroke-linejoin=\u0027round\u0027 class=\u0027ionicon-fill-none ionicon-stroke-width\u0027\/\u003e\u003c\/svg\u003e\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n'
+</script>
+
+
+<script defer src="http://localhost:1313/blog/js/main.min.15ea6de828b83519cdc1bc66872563a50cd5e59b4b1cfc6f31019951922b2e78.js" integrity="sha256-Fept6Ci4NRnNwbxmhyVjpQzV5ZtLHPxvMQGZUZIrLng=" crossorigin="anonymous" async></script>
+
+
+
+<noscript>
+<style type=text/css>#theme-selector-button{display:none}</style>
+</noscript>
+
+
+
+
+  </body>
+</html>

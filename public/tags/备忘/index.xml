@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>备忘 on Blog</title>
+    <link>http://localhost:1313/blog/tags/%E5%A4%87%E5%BF%98/</link>
+    <description>Recent content in 备忘 on Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 30 Sep 2024 20:43:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/%E5%A4%87%E5%BF%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>想做的事</title>
+      <link>http://localhost:1313/blog/articles/todo/</link>
+      <pubDate>Mon, 30 Sep 2024 20:43:10 +0800</pubDate>
+      <guid>http://localhost:1313/blog/articles/todo/</guid>
+      <description>&lt;h3 id=&#34;因子框架p-quant&#34;&gt;因子框架（P quant）&lt;/h3&gt;&#xA;&lt;p&gt;动机：聚宽等回测平台自由度低，受服务器CPU、内存、环境配置等限制&lt;/p&gt;&#xA;&lt;p&gt;思路：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;获取数据用tushare（最多只需5000积分，即500元）、baostock&lt;/li&gt;&#xA;&lt;li&gt;每日将数据自动导入进数据库（租云服务器？本地？）&lt;/li&gt;&#xA;&lt;li&gt;设计数据调用接口&lt;/li&gt;&#xA;&lt;li&gt;搬运聚宽上的框架，并拓展功能&lt;/li&gt;&#xA;&lt;li&gt;计算因子库&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;顾虑：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;时间！目前估计需要全力1个月，这个时间是否应该用来做更重要的事&lt;/li&gt;&#xA;&lt;li&gt;是否值得：成本能否控制？由于功能一定不如付费的完备，那么成本能否远低于其他？（比如choice的api是3w一年）&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+  </channel>
+</rss>
