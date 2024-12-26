@@ -59,7 +59,7 @@ params:
 
   profileMode:
     enabled: true
-    title: Dafu Zhu
+    title: Diaspora
     imageUrl: "https://avatars.githubusercontent.com/u/156023557?s=400&u=ec87fdd875686fc2a081b274151f786c8fdf4e49&v=4"
     imageTitle: my image
     # imageWidth: 120
